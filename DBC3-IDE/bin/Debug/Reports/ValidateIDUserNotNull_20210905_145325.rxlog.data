@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="16.35s"
+		durationms="16352"
+		type="root"
+		rid="95d1eff71564f5a"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="9/5/2021 2:53:30 PM"
+		timestampiso="2021-09-05T07:53:30"
+		endtime="9/5/2021 2:53:46 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateIDUserNotNull">
+		<detail>
+			ValidateIDUserNotNull
+		</detail>
+		<errormessage>
+			Object reference not set to an instance of an object.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.567"
+			timeRelativeToTestModuleStartTime="00:09.567"
+			timeWallClock="14:53:39"
+			time="00:09.567"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeNotEqual (InnerText!='(null)') on item 'DNCWAREBlockChain3.DomainList.DomainProfile.UserProfile.IDUser'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//div[@class='header-id text-right'][2]"
+				itempath=".//div[@class='header-id text-right'][2]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.DomainList.DomainProfile.UserProfile.IDUser"
+				id="2fdecd0866fd44ee882a0d5c0dc03de5"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\ValidateIDUserNotNull.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.532"
+			timeRelativeToTestModuleStartTime="00:15.532"
+			timeWallClock="14:53:45"
+			time="00:15.532"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Validate_24ea22fe\Validate_24ea22fe_29aec814_trace.jpg"
+			errthumb="images_Validate_24ea22fe\Validate_24ea22fe_29aec814_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13896)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.123"
+			timeRelativeToTestModuleStartTime="00:16.123"
+			timeWallClock="14:53:46"
+			time="00:16.123"
+			level="Failure"
+			category="Validation"
+			errimg="images_Validate_24ea22fe\Validate_24ea22fe_61b75a29_trace.jpg"
+			errthumb="images_Validate_24ea22fe\Validate_24ea22fe_61b75a29_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//div[@class='header-id text-right'][2]"
+				itempath=".//div[@class='header-id text-right'][2]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.DomainList.DomainProfile.UserProfile.IDUser"
+				id="2fdecd0866fd44ee882a0d5c0dc03de5"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\ValidateIDUserNotNull.cs"
+				codeline="83"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.243"
+			timeRelativeToTestModuleStartTime="00:16.243"
+			timeWallClock="14:53:46"
+			time="00:16.243"
+			level="Error"
+			category="Module"
+			errimg="images_Validate_24ea22fe\Validate_24ea22fe_61b75a29_trace.jpg"
+			errthumb="images_Validate_24ea22fe\Validate_24ea22fe_61b75a29_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.&lt;>c.&lt;AttributeNotEqualInternal>b__33_0(Object v, Object p)&#13;&#10;   at Ranorex.Validate.AttributeCompareImpl(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.&lt;>c__DisplayClass40_0.&lt;Execute>g__attCompare|0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleValidateAttribute[T](Func`1 action, IAttributeValidation attributeValidation)&#13;&#10;   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.AttributeNotEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.AttributeNotEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeNotEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeNotEqual(RepoItemInfo itemInfo, String name, Object value, String message, Boolean exceptionOnFail)&#13;&#10;   at Ranorex.Validate.AttributeNotEqual(RepoItemInfo itemInfo, String name, Object value)&#13;&#10;   at DBC3_IDE.DNCWAREBlockChain3.ValidateIDUserNotNull.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\ValidateIDUserNotNull.cs:line 83&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\ValidateIDUserNotNull.cs"
+				codeline="83"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

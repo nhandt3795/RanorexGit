@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="22.55s"
+		durationms="22547"
+		type="root"
+		rid="1157cb195e3065de"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="9/11/2021 8:03:40 PM"
+		timestampiso="2021-09-11T13:03:40"
+		endtime="9/11/2021 8:04:03 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateGroupIDNotNull">
+		<detail>
+			ValidateGroupIDNotNull
+		</detail>
+		<errormessage>
+			Object reference not set to an instance of an object.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.681"
+			timeRelativeToTestModuleStartTime="00:10.681"
+			timeWallClock="20:03:51"
+			time="00:10.681"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeNotEqual (TagValue!='(null)') on item 'DBC3_IDE_DOMAIN.GroupEdit.GroupID'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-dbcId']"
+				itempath=".//input[@id='node-input-dbcId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.GroupEdit.GroupID"
+				id="93b78a1fd7d440a2b0e11e56c81464fa"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\GroupEdit\ValidateGroupIDNotNull.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.453"
+			timeRelativeToTestModuleStartTime="00:21.453"
+			timeWallClock="20:04:02"
+			time="00:21.453"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Validate_9424ce90\Validate_9424ce90_065f3870_trace.jpg"
+			errthumb="images_Validate_9424ce90\Validate_9424ce90_065f3870_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 22052)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.229"
+			timeRelativeToTestModuleStartTime="00:22.229"
+			timeWallClock="20:04:02"
+			time="00:22.229"
+			level="Failure"
+			category="Validation"
+			errimg="images_Validate_9424ce90\Validate_9424ce90_15c188f8_trace.jpg"
+			errthumb="images_Validate_9424ce90\Validate_9424ce90_15c188f8_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-dbcId']"
+				itempath=".//input[@id='node-input-dbcId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.GroupEdit.GroupID"
+				id="93b78a1fd7d440a2b0e11e56c81464fa"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\GroupEdit\ValidateGroupIDNotNull.cs"
+				codeline="83"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.440"
+			timeRelativeToTestModuleStartTime="00:22.440"
+			timeWallClock="20:04:03"
+			time="00:22.440"
+			level="Error"
+			category="Module"
+			errimg="images_Validate_9424ce90\Validate_9424ce90_15c188f8_trace.jpg"
+			errthumb="images_Validate_9424ce90\Validate_9424ce90_15c188f8_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.&lt;>c.&lt;AttributeNotEqualInternal>b__33_0(Object v, Object p)&#13;&#10;   at Ranorex.Validate.AttributeCompareImpl(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.&lt;>c__DisplayClass40_0.&lt;Execute>g__attCompare|0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleValidateAttribute[T](Func`1 action, IAttributeValidation attributeValidation)&#13;&#10;   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.AttributeNotEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.AttributeNotEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeNotEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeNotEqual(RepoItemInfo itemInfo, String name, Object value, String message, Boolean exceptionOnFail)&#13;&#10;   at Ranorex.Validate.AttributeNotEqual(RepoItemInfo itemInfo, String name, Object value)&#13;&#10;   at DBC3_IDE.DBC3_IDE.GroupEdit.ValidateGroupIDNotNull.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\GroupEdit\ValidateGroupIDNotNull.cs:line 83&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\GroupEdit\ValidateGroupIDNotNull.cs"
+				codeline="83"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

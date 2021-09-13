@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="15.98s"
+		durationms="15975"
+		type="root"
+		rid="11f98681233d660e"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="9/5/2021 2:56:04 PM"
+		timestampiso="2021-09-05T07:56:04"
+		endtime="9/5/2021 2:56:20 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateIDUserNotNull">
+		<detail>
+			ValidateIDUserNotNull
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.520"
+			timeRelativeToTestModuleStartTime="00:09.520"
+			timeWallClock="14:56:14"
+			time="00:09.520"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>Null
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.538"
+			timeRelativeToTestModuleStartTime="00:09.538"
+			timeWallClock="14:56:14"
+			time="00:09.538"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeNotEqual (InnerText!=$Null) on item 'DNCWAREBlockChain3.DomainList.DomainProfile.UserProfile.IDUser'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//div[@class='header-id text-right'][2]"
+				itempath=".//div[@class='header-id text-right'][2]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.DomainList.DomainProfile.UserProfile.IDUser"
+				id="2fdecd0866fd44ee882a0d5c0dc03de5"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\ValidateIDUserNotNull.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.491"
+			timeRelativeToTestModuleStartTime="00:13.491"
+			timeWallClock="14:56:18"
+			time="00:13.491"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13896)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.967"
+			timeRelativeToTestModuleStartTime="00:13.967"
+			timeWallClock="14:56:18"
+			time="00:13.967"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'DBC3_IDERepository.DNCWAREBlockChain3.DomainList.DomainProfile.UserProfile.IDUser' does not match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//div[@class='header-id text-right'][2]"
+				itempath=".//div[@class='header-id text-right'][2]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.DomainList.DomainProfile.UserProfile.IDUser"
+				id="2fdecd0866fd44ee882a0d5c0dc03de5"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\ValidateIDUserNotNull.cs"
+				codeline="96"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.970"
+			timeRelativeToTestModuleStartTime="00:13.970"
+			timeWallClock="14:56:18"
+			time="00:13.970"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\ValidateIDUserNotNull.cs"
+				codeline="99"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

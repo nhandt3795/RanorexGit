@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.68s"
+		durationms="7677"
+		type="root"
+		rid="df42f9e42cc9734"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/18/2021 10:05:56 AM"
+		timestampiso="2021-08-18T03:05:56"
+		endtime="8/18/2021 10:06:04 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.886"
+			timeRelativeToTestModuleStartTime="00:04.886"
+			timeWallClock="10:06:01"
+			time="00:04.886"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Down item 'DBC3_IDE_DOMAIN.DomainCode.dbc_contract' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@innertext='dbc contract']"
+				itempath=".//div[@innertext='dbc contract']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract"
+				id="67693ea6ede84de9bcc25ab5f63e7064"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.764"
+			timeRelativeToTestModuleStartTime="00:05.764"
+			timeWallClock="10:06:02"
+			time="00:05.764"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13988)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="83"
+				loglvl="Warn"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.597"
+			timeRelativeToTestModuleStartTime="00:06.597"
+			timeWallClock="10:06:03"
+			time="00:06.597"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DBC3_IDE_DOMAIN.DomainCode.dbc_contract' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@innertext='dbc contract']"
+				itempath=".//div[@innertext='dbc contract']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract"
+				id="67693ea6ede84de9bcc25ab5f63e7064"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="87"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.177"
+			timeRelativeToTestModuleStartTime="00:07.177"
+			timeWallClock="10:06:03"
+			time="00:07.177"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Up item 'DBC3_IDE_DOMAIN.DomainCode.dbc_contract' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@innertext='dbc contract']"
+				itempath=".//div[@innertext='dbc contract']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract"
+				id="67693ea6ede84de9bcc25ab5f63e7064"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="91"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

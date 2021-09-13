@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="7.16s"
+		durationms="7161"
+		type="root"
+		rid="1e527882a234b8"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/18/2021 9:44:05 AM"
+		timestampiso="2021-08-18T02:44:05"
+		endtime="8/18/2021 9:44:12 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<errormessage>
+			Failed to move to location 'Center' within element '{WebElement:line}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.590"
+			timeRelativeToTestModuleStartTime="00:04.590"
+			timeWallClock="09:44:09"
+			time="00:04.590"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Down item 'DBC3_IDE_DOMAIN.DomainCode.dbc_contract' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@innertext='dbc contract']"
+				itempath=".//div[@innertext='dbc contract']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract"
+				id="67693ea6ede84de9bcc25ab5f63e7064"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.968"
+			timeRelativeToTestModuleStartTime="00:05.968"
+			timeWallClock="09:44:11"
+			time="00:05.968"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Recordin_261ec6ee\Recordin_261ec6ee_a43c5b08_trace.jpg"
+			errthumb="images_Recordin_261ec6ee\Recordin_261ec6ee_a43c5b08_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13280)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.863"
+			timeRelativeToTestModuleStartTime="00:06.863"
+			timeWallClock="09:44:12"
+			time="00:06.863"
+			level="Info"
+			category="Mouse"
+			errimg="images_Recordin_261ec6ee\Recordin_261ec6ee_c5981a1b_trace.jpg"
+			errthumb="images_Recordin_261ec6ee\Recordin_261ec6ee_c5981a1b_trace_thumb.jpg">
+			<message>
+				Mouse Left Move item 'DBC3_IDE_DOMAIN.DomainCode.NewItem' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//line[@class='red-ui-workspace-chart-grid-h' and @y1='40']"
+				itempath=".//line[@class='red-ui-workspace-chart-grid-h' and @y1='40']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.NewItem"
+				id="dace88c344c04ff986a0aa11c9183225"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="87"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.076"
+			timeRelativeToTestModuleStartTime="00:07.076"
+			timeWallClock="09:44:12"
+			time="00:07.076"
+			level="Error"
+			category="Module"
+			errimg="images_Recordin_261ec6ee\Recordin_261ec6ee_b36ed096_trace.jpg"
+			errthumb="images_Recordin_261ec6ee\Recordin_261ec6ee_b36ed096_trace_thumb.jpg">
+			<message>
+				Failed to move to location 'Center' within element '{WebElement:line}'.<br/>The pointer cannot be moved to point '{X=2680,Y=187}' since it is outside of the visible desktop.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Mouse.MoveTo(Element element, Location location, Duration moveTime)
+   at Ranorex.Adapter.MoveTo(Location location, Duration moveTime, Boolean showOutOfBoundsWarning)
+   at Ranorex.Adapter.MoveTo()
+   at DBC3_IDE.DomainCode.Recording1.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs:line 88
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="88"
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//line[@class='red-ui-workspace-chart-grid-h' and @y1='40']"
+				itempath=".//line[@class='red-ui-workspace-chart-grid-h' and @y1='40']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.NewItem"
+				id="dace88c344c04ff986a0aa11c9183225"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

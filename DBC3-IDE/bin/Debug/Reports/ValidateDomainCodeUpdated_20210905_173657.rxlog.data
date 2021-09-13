@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="17.5s"
+		durationms="17498"
+		type="root"
+		rid="f0c719b63905792"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="9/5/2021 5:37:02 PM"
+		timestampiso="2021-09-05T10:37:02"
+		endtime="9/5/2021 5:37:20 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateDomainCodeUpdated">
+		<detail>
+			ValidateDomainCodeUpdated
+		</detail>
+		<errormessage>
+			Attribute 'InnerText' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction' does not match the specified value (actual='123123', expected='1').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.240"
+			timeRelativeToTestModuleStartTime="00:09.240"
+			timeWallClock="17:37:12"
+			time="00:09.240"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DomainCode
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.258"
+			timeRelativeToTestModuleStartTime="00:09.258"
+			timeWallClock="17:37:12"
+			time="00:09.258"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText=$DomainCode) on item 'DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]"
+				itempath=".//span[@class='ace_constant ace_numeric'][1]"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction"
+				id="3174fd71a9ec4f2eaeda746bffae5818"
+				timeout="40000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.536"
+			timeRelativeToTestModuleStartTime="00:13.536"
+			timeWallClock="17:37:16"
+			time="00:13.536"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Validate_bca60617\Validate_bca60617_57025f16_trace.jpg"
+			errthumb="images_Validate_bca60617\Validate_bca60617_57025f16_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13896)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.261"
+			timeRelativeToTestModuleStartTime="00:17.261"
+			timeWallClock="17:37:20"
+			time="00:17.261"
+			level="Failure"
+			category="Validation"
+			errimg="images_Validate_bca60617\Validate_bca60617_7c2b82e9_trace.jpg"
+			errthumb="images_Validate_bca60617\Validate_bca60617_7c2b82e9_trace_thumb.jpg">
+			<message>
+				Attribute 'InnerText' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction' does not match the specified value (actual='123123', expected='1').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]"
+				itempath=".//span[@class='ace_constant ace_numeric'][1]"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction"
+				id="3174fd71a9ec4f2eaeda746bffae5818"
+				timeout="40000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.cs"
+				codeline="96"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.382"
+			timeRelativeToTestModuleStartTime="00:17.382"
+			timeWallClock="17:37:20"
+			time="00:17.382"
+			level="Error"
+			category="Module"
+			errimg="images_Validate_bca60617\Validate_bca60617_8856d0d2_trace.jpg"
+			errthumb="images_Validate_bca60617\Validate_bca60617_8856d0d2_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'InnerText' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction' does not match the specified value (actual='123123', expected='1').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Boolean exceptionOnFail)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at DBC3_IDE.DBC3_IDE.DomainCode.ValidateDomainCodeUpdated.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.cs:line 96
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.cs"
+				codeline="96"
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]"
+				itempath=".//span[@class='ace_constant ace_numeric'][1]"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction"
+				id="3174fd71a9ec4f2eaeda746bffae5818"
+				timeout="40000"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

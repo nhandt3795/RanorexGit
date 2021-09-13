@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="26.08s"
+		durationms="26078"
+		type="root"
+		rid="29212a937da28cf6"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="8/24/2021 6:54:54 PM"
+		timestampiso="2021-08-24T11:54:54"
+		endtime="8/24/2021 6:55:20 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateAddNewWalletPass">
+		<detail>
+			ValidateAddNewWalletPass
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.351"
+			timeRelativeToTestModuleStartTime="00:14.351"
+			timeWallClock="18:55:08"
+			time="00:14.351"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating Exists on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.TitleEditDbcUser'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//li[@innertext='Edit dbc-user node']"
+				itempath=".//li[@innertext='Edit dbc-user node']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.TitleEditDbcUser"
+				id="e9237624b61b43fe938bccdcfc556570"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcWallet\ValidateAddNewWalletPass.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:23.282"
+			timeRelativeToTestModuleStartTime="00:23.282"
+			timeWallClock="18:55:17"
+			time="00:23.282"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 4580)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:24.066"
+			timeRelativeToTestModuleStartTime="00:24.066"
+			timeWallClock="18:55:18"
+			time="00:24.066"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'TitleEditDbcUser' does exist.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//li[@innertext='Edit dbc-user node']"
+				itempath=".//li[@innertext='Edit dbc-user node']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.TitleEditDbcUser"
+				id="e9237624b61b43fe938bccdcfc556570"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcWallet\ValidateAddNewWalletPass.cs"
+				codeline="83"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:24.067"
+			timeRelativeToTestModuleStartTime="00:24.067"
+			timeWallClock="18:55:18"
+			time="00:24.067"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcWallet\ValidateAddNewWalletPass.cs"
+				codeline="86"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

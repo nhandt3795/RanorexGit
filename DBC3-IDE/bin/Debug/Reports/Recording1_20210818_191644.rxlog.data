@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="1.1m"
+		durationms="63455"
+		type="root"
+		rid="9c58df4759720f4"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/18/2021 7:16:46 PM"
+		timestampiso="2021-08-18T12:16:46"
+		endtime="8/18/2021 7:17:50 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.183"
+			timeRelativeToTestModuleStartTime="00:03.183"
+			timeWallClock="19:16:50"
+			time="00:03.183"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>Data
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.198"
+			timeRelativeToTestModuleStartTime="00:03.198"
+			timeWallClock="19:16:50"
+			time="00:03.198"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating NotExists on item 'DBC3_IDE_DOMAIN.DomainCode.TextLineOneInFunction'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]"
+				itempath=".//span[@class='ace_constant ace_numeric'][1]"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.TextLineOneInFunction"
+				id="3174fd71a9ec4f2eaeda746bffae5818"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.947"
+			timeRelativeToTestModuleStartTime="00:04.947"
+			timeWallClock="19:16:51"
+			time="00:04.947"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13824)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:03.452"
+			timeRelativeToTestModuleStartTime="01:03.452"
+			timeWallClock="19:17:50"
+			time="01:03.452"
+			level="Success"
+			category="Validation">
+			<message>
+				Element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.TextLineOneInFunction' does not exist (Failed to find item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.TextLineOneInFunction'. No element found for path '/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]' at step 'descendant-or-self::span[@class='ace_constant ace_numeric'][1]' after 299 attempts within 1m.).
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]"
+				itempath=".//span[@class='ace_constant ace_numeric'][1]"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.TextLineOneInFunction"
+				id="3174fd71a9ec4f2eaeda746bffae5818"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="96"
+				failedStep="descendant-or-self::span[@class='ace_constant ace_numeric'][1]"
+				bestPathPrefix="/dom[@domain='localhost:1880']"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

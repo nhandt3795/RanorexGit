@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="18.47s"
+		durationms="18466"
+		type="root"
+		rid="972eaf63a49444"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="9/11/2021 7:37:29 PM"
+		timestampiso="2021-09-11T12:37:29"
+		endtime="9/11/2021 7:37:48 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateNameGroupEmpty">
+		<detail>
+			ValidateNameGroupEmpty
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.736"
+			timeRelativeToTestModuleStartTime="00:10.736"
+			timeWallClock="19:37:40"
+			time="00:10.736"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>IdReturn
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:17.567"
+			timeRelativeToTestModuleStartTime="00:17.567"
+			timeWallClock="19:37:47"
+			time="00:17.567"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 22052)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.139"
+			timeRelativeToTestModuleStartTime="00:18.139"
+			timeWallClock="19:37:47"
+			time="00:18.139"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText=$IdReturn) on item 'DNCWAREBlockChain3.GroupList.IDGroupLine1'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//table[@class='table table-striped']//tr[1]//td[2][1]"
+				itempath=".//table[@class='table table-striped']//tr[1]//td[2][1]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1"
+				id="16bb505d7e9b425fa0e56bcdcc0fe364"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\GroupList\ValidateNameGroupEmpty.cs"
+				codeline="98"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.467"
+			timeRelativeToTestModuleStartTime="00:18.467"
+			timeWallClock="19:37:48"
+			time="00:18.467"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//table[@class='table table-striped']//tr[1]//td[2][1]"
+				itempath=".//table[@class='table table-striped']//tr[1]//td[2][1]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1"
+				id="16bb505d7e9b425fa0e56bcdcc0fe364"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\GroupList\ValidateNameGroupEmpty.cs"
+				codeline="99"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

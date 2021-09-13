@@ -1,0 +1,1845 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{0AF97247-4181-4DF3-AF0A-CEA394CEC2EF}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DBC3_IDE</RootNamespace>
+    <AssemblyName>DBC3-IDE</AssemblyName>
+    <NoWarn>1591</NoWarn>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <RANOREX_BIN_PATH Condition=" '$(RANOREX_BIN_PATH)' == '' ">$([MSBuild]::GetRegistryValueFromView('HKEY_LOCAL_MACHINE\SOFTWARE\Ranorex\Studio', 'InstallDir', null, RegistryView.Registry64, RegistryView.Registry32))\Bin</RANOREX_BIN_PATH>
+    <RanorexTargetsPath>$(RANOREX_BIN_PATH)\Ranorex.MSBuild.Targets</RanorexTargetsPath>
+    <projectdefaultrepository>a575eef3-93ab-4018-af3b-bfc00f70e3c3</projectdefaultrepository>
+    <StartAction>Project</StartAction>
+    <NoWin32Manifest>False</NoWin32Manifest>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <BaseAddress>4194304</BaseAddress>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>$(OutputPath)\$(AssemblyName).xml</DocumentationFile>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Bootstrapper">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Core.Resolver">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Cef">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Delphi">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.FirefoxWeb">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Flex">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Java">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Mobile">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Msaa">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Office">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Qt">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.RawText">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Sap">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Uia">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Web">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WebDriver">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Win32">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.WinForms.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.Wpf.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>8a99d018-7067-4832-8d92-69f733c33d6c</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1c99a25c-24af-4556-8e1a-3bfba2359989</id>
+      <BoundTo>8ee2eeb3-97ef-4552-9b2b-2b6f72828a6b</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>907e82b2-2d94-4e7b-a9e3-7f75a86fe4e0</id>
+      <BoundTo>8ee2eeb3-97ef-4552-9b2b-2b6f72828a6b</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickButtonCancel.cs">
+      <DependentUpon>ClickButtonCancel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>087917b1-f86e-49ba-b470-f702a66f77fb</id>
+      <BoundTo>32a1b892-2475-46e6-a1ac-0c7c184f683b</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickButtonCancel.UserCode.cs">
+      <DependentUpon>ClickButtonCancel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bbb0d6cb-e5a5-47fe-b8c7-34c0257d6e69</id>
+      <BoundTo>32a1b892-2475-46e6-a1ac-0c7c184f683b</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickCenterDashboard.cs">
+      <DependentUpon>ClickCenterDashboard.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6d720627-8919-4b9e-ac24-16538ce17d31</id>
+      <BoundTo>90c0f99c-213a-4113-a9db-89032a6ca4ce</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickCenterDashboard.UserCode.cs">
+      <DependentUpon>ClickCenterDashboard.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b8eec910-b144-410f-93fe-c4e562871af6</id>
+      <BoundTo>90c0f99c-213a-4113-a9db-89032a6ca4ce</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickDeleteButton.cs">
+      <BoundTo>fcdf5ebb-28e3-4b35-8288-2856230f8eca</BoundTo>
+      <DependentUpon>ClickDeleteButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9ff237fa-c752-49cd-9b97-f12c56364ccc</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickDeleteButton.UserCode.cs">
+      <BoundTo>fcdf5ebb-28e3-4b35-8288-2856230f8eca</BoundTo>
+      <DependentUpon>ClickDeleteButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1d6d8220-2aee-4281-9d08-6109fd278d0e</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickDone.cs">
+      <DependentUpon>ClickDone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9438e2a4-6dc3-4858-b1d6-e81762941873</id>
+      <BoundTo>b3b21a84-1504-47b0-b753-39e487317138</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickDone.UserCode.cs">
+      <DependentUpon>ClickDone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>24f86820-81f1-4953-b0ff-349e1947c116</id>
+      <BoundTo>b3b21a84-1504-47b0-b753-39e487317138</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickEnableButton.cs">
+      <DependentUpon>ClickEnableButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>42629c60-0114-4a62-8626-73b1ae9e9fdc</id>
+      <BoundTo>b895a265-d1fe-4b81-a3e7-25074cd6e03f</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\ClickEnableButton.UserCode.cs">
+      <DependentUpon>ClickEnableButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9ba8a892-f84d-4d36-bbc6-8847a6e7e1a6</id>
+      <BoundTo>b895a265-d1fe-4b81-a3e7-25074cd6e03f</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\FillImformationDescription.cs">
+      <DependentUpon>FillImformationDescription.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79848f40-6828-4aec-8b8b-c9d915ecf2cb</id>
+      <BoundTo>44f3f0ec-cc56-43a2-be3e-0fd01acf302f</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\CommonRecording\FillImformationDescription.UserCode.cs">
+      <DependentUpon>FillImformationDescription.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>973948c4-361c-4229-8a10-1fef8cd4f057</id>
+      <BoundTo>44f3f0ec-cc56-43a2-be3e-0fd01acf302f</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ChooseDomainDefault.cs">
+      <DependentUpon>ChooseDomainDefault.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92a2503c-d5d5-41b1-85eb-48ba3f1a8de3</id>
+      <BoundTo>f130a462-453f-4d65-b92d-b5a0cb0caef4</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ChooseDomainDefault.UserCode.cs">
+      <DependentUpon>ChooseDomainDefault.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a06e007-b21b-4cf2-aaf4-241f096d7d95</id>
+      <BoundTo>f130a462-453f-4d65-b92d-b5a0cb0caef4</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ClickCancel.cs">
+      <DependentUpon>ClickCancel.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>80b5ff50-2189-49f6-9d42-706dd6f4e6d7</id>
+      <BoundTo>fed58b5d-c5bd-4c36-a118-7894a466b5d6</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ClickCancel.UserCode.cs">
+      <DependentUpon>ClickCancel.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>810c56c5-088b-445c-b1ae-119a3e558f98</id>
+      <BoundTo>fed58b5d-c5bd-4c36-a118-7894a466b5d6</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ClickExpand.cs">
+      <BoundTo>cb319d5d-23f5-405d-aaa6-39b5c54e7e86</BoundTo>
+      <DependentUpon>ClickExpand.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9b58859b-bae6-4c3a-b784-13f793b2b95b</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ClickExpand.UserCode.cs">
+      <BoundTo>cb319d5d-23f5-405d-aaa6-39b5c54e7e86</BoundTo>
+      <DependentUpon>ClickExpand.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cd04b812-f660-4a7a-bd2d-915b09150ce1</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ClickUpdate.cs">
+      <BoundTo>2d1fce81-d752-40ae-aa92-fd2256b28376</BoundTo>
+      <DependentUpon>ClickUpdate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7dd9ad34-4330-48f8-ae86-3f1febc95fab</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ClickUpdate.UserCode.cs">
+      <BoundTo>2d1fce81-d752-40ae-aa92-fd2256b28376</BoundTo>
+      <DependentUpon>ClickUpdate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b860376c-578c-4b76-b04d-ffc0c76caed6</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\DoubleDomainDefault.cs">
+      <BoundTo>4f747c7d-8822-4abd-89a9-0c5a1a2256f9</BoundTo>
+      <DependentUpon>DoubleDomainDefault.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>db6d73d4-4e91-449b-a65b-e47f92f8f13c</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\DoubleDomainDefault.UserCode.cs">
+      <BoundTo>4f747c7d-8822-4abd-89a9-0c5a1a2256f9</BoundTo>
+      <DependentUpon>DoubleDomainDefault.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3ccf0f6b-dc3e-4925-be9c-072d9fc6e211</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\FillDomainCode.cs">
+      <BoundTo>578a0ab0-24b9-46e7-8142-d2ffbe0a8af2</BoundTo>
+      <DependentUpon>FillDomainCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c240356-f792-47c1-9d60-2dc8bbe4e632</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\FillDomainCode.UserCode.cs">
+      <BoundTo>578a0ab0-24b9-46e7-8142-d2ffbe0a8af2</BoundTo>
+      <DependentUpon>FillDomainCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b39c34ee-bc0f-43cc-89ee-ca3f7a134b23</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\FillDomainCodeExpand.cs">
+      <DependentUpon>FillDomainCodeExpand.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>94de8d93-98fd-4949-90ad-3301c87bf6c7</id>
+      <BoundTo>79a4c3c2-ebf4-4c10-b71d-742c7a129af8</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\FillDomainCodeExpand.UserCode.cs">
+      <DependentUpon>FillDomainCodeExpand.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>385229fe-3dce-471e-9553-fd9f7d43758b</id>
+      <BoundTo>79a4c3c2-ebf4-4c10-b71d-742c7a129af8</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\RemoveDomainCode.cs">
+      <BoundTo>08643abe-d24a-403e-a22f-a1c9074759ec</BoundTo>
+      <DependentUpon>RemoveDomainCode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a32c703c-beb9-4c3d-8244-77f5f1eae030</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\RemoveDomainCode.UserCode.cs">
+      <BoundTo>08643abe-d24a-403e-a22f-a1c9074759ec</BoundTo>
+      <DependentUpon>RemoveDomainCode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>79621603-d603-4fc1-876a-32a13af2d48c</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ValidateDomainCodeEmpty.cs">
+      <BoundTo>7fb0d755-aa11-4988-b39c-ef2f9eef8817</BoundTo>
+      <DependentUpon>ValidateDomainCodeEmpty.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cbc8385f-6376-4f5a-a06c-23ceeef6abd5</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ValidateDomainCodeEmpty.UserCode.cs">
+      <BoundTo>7fb0d755-aa11-4988-b39c-ef2f9eef8817</BoundTo>
+      <DependentUpon>ValidateDomainCodeEmpty.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76f2bb67-4f84-48d7-9593-da315ee9dcdb</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.cs">
+      <BoundTo>598870fe-0b21-4c6d-aac2-c9020ea09109</BoundTo>
+      <DependentUpon>ValidateDomainCodeUpdated.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>57942a78-aaff-4740-87f3-f114d4e835d6</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.UserCode.cs">
+      <BoundTo>598870fe-0b21-4c6d-aac2-c9020ea09109</BoundTo>
+      <DependentUpon>ValidateDomainCodeUpdated.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3114f22f-6b3e-48c5-a53d-88de925c5099</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ValidateDomainDefault.cs">
+      <BoundTo>a4810e19-c73f-4b6b-8384-3af87131d3b8</BoundTo>
+      <DependentUpon>ValidateDomainDefault.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c842490f-9903-4ded-b931-5fdde2f5871a</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\DomainCode\ValidateDomainDefault.UserCode.cs">
+      <BoundTo>a4810e19-c73f-4b6b-8384-3af87131d3b8</BoundTo>
+      <DependentUpon>ValidateDomainDefault.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>aafd6696-1c4e-4055-99e9-509e45abafe9</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\AddWalletAddress.cs">
+      <BoundTo>8ea7bbb8-79f2-4436-aa2c-25f30e8debd8</BoundTo>
+      <DependentUpon>AddWalletAddress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1c0ea7c6-97e0-465d-be3f-9d5aa0d0b45b</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\AddWalletAddress.UserCode.cs">
+      <BoundTo>8ea7bbb8-79f2-4436-aa2c-25f30e8debd8</BoundTo>
+      <DependentUpon>AddWalletAddress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>6ace3fc1-f85c-4384-b6dc-7fcda1bf3c03</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\ChooseWalletOption.cs">
+      <DependentUpon>ChooseWalletOption.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ff6d5eab-8ae6-47c4-b228-890ec3e0414b</id>
+      <BoundTo>1af6776a-ef9e-4463-91d6-4a2890d17da3</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\ChooseWalletOption.UserCode.cs">
+      <DependentUpon>ChooseWalletOption.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>33672a95-883d-4bf1-958c-ffbe50009c4a</id>
+      <BoundTo>1af6776a-ef9e-4463-91d6-4a2890d17da3</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickButtonDone.cs">
+      <DependentUpon>ClickButtonDone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d66d97c4-4bc1-43c4-9926-30ad67720177</id>
+      <BoundTo>0fc7df1b-b9d7-4542-ae2b-9dc572226fc7</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickButtonDone.UserCode.cs">
+      <DependentUpon>ClickButtonDone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b3d62c31-d15e-4e44-8b43-ebe608c253de</id>
+      <BoundTo>0fc7df1b-b9d7-4542-ae2b-9dc572226fc7</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickDisclosedToAll.cs">
+      <BoundTo>36aa8328-d7a3-4b35-b584-6d4e7945815c</BoundTo>
+      <DependentUpon>ClickDisclosedToAll.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11680030-3e40-4c18-bae5-8a1c4331a2c9</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickDisclosedToAll.UserCode.cs">
+      <BoundTo>36aa8328-d7a3-4b35-b584-6d4e7945815c</BoundTo>
+      <DependentUpon>ClickDisclosedToAll.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>76cfabec-1789-4422-b72e-8bff38d6bf88</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickEditWalletButton.cs">
+      <DependentUpon>ClickEditWalletButton.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>47925e49-f4b6-4760-9753-e1c9e3c72178</id>
+      <BoundTo>058c7649-fb18-4936-88f0-f26db4415a98</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickEditWalletButton.UserCode.cs">
+      <DependentUpon>ClickEditWalletButton.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e38891f1-0813-408a-971e-5459d2b3f743</id>
+      <BoundTo>058c7649-fb18-4936-88f0-f26db4415a98</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickVisibleDomain.cs">
+      <BoundTo>d04690c2-a599-4182-8217-2369bef732e0</BoundTo>
+      <DependentUpon>ClickVisibleDomain.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0c0e40d9-d639-4fce-905b-d8c4a8c5c659</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Click\ClickVisibleDomain.UserCode.cs">
+      <BoundTo>d04690c2-a599-4182-8217-2369bef732e0</BoundTo>
+      <DependentUpon>ClickVisibleDomain.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5b16d923-607b-4d77-ba7a-45a5a66c9d73</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\FillImformationDbcUser.cs">
+      <BoundTo>11aa6da0-f71c-419e-8333-7c370aca667d</BoundTo>
+      <DependentUpon>FillImformationDbcUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>79ee9e35-03e6-40d8-9f23-c9f43d9c2947</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\FillImformationDbcUser.UserCode.cs">
+      <BoundTo>11aa6da0-f71c-419e-8333-7c370aca667d</BoundTo>
+      <DependentUpon>FillImformationDbcUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>01e2803f-4609-467b-bdd0-c374a5cfe883</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\FillUserName.cs">
+      <BoundTo>f9920316-b950-41ee-ba07-bd2c89afb6c4</BoundTo>
+      <DependentUpon>FillUserName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2a9db59f-3d51-4454-a4f2-34f6d2d9a3ef</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\FillUserName.UserCode.cs">
+      <BoundTo>f9920316-b950-41ee-ba07-bd2c89afb6c4</BoundTo>
+      <DependentUpon>FillUserName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ac377d38-dc59-4a68-a0a8-d3f1c70096f7</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Validation\CheckPropertyDefault.cs">
+      <DependentUpon>CheckPropertyDefault.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2eba99f9-2d17-4adf-bd93-01f789b1c89f</id>
+      <BoundTo>60b69892-8629-4d4d-9cb2-6253105fe125</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Validation\CheckPropertyDefault.UserCode.cs">
+      <DependentUpon>CheckPropertyDefault.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ad85de0b-540c-4cfb-9c79-870e772f6ffa</id>
+      <BoundTo>60b69892-8629-4d4d-9cb2-6253105fe125</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Validation\ValidateUpdateNewWalletFail.cs">
+      <DependentUpon>ValidateUpdateNewWalletFail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>54ef4dab-21e2-4c2e-bfeb-f09d65d2fbc9</id>
+      <BoundTo>ef98321a-20c6-4fd6-bfcb-215fb475a32e</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcUser\Validation\ValidateUpdateNewWalletFail.UserCode.cs">
+      <DependentUpon>ValidateUpdateNewWalletFail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>03967203-ac8c-401d-802e-0460088672b7</id>
+      <BoundTo>ef98321a-20c6-4fd6-bfcb-215fb475a32e</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonAdd.cs">
+      <DependentUpon>ClickButtonAdd.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>5041d5fa-e5c2-4865-90ef-167e4836a19b</id>
+      <BoundTo>cd0894b2-2a98-4182-bbbd-639c64283510</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonAdd.UserCode.cs">
+      <DependentUpon>ClickButtonAdd.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>337c8aba-8a6c-4c52-9b49-63057f326995</id>
+      <BoundTo>cd0894b2-2a98-4182-bbbd-639c64283510</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonCreateWallet.cs">
+      <DependentUpon>ClickButtonCreateWallet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3e60794b-af29-4aa5-b09e-4f064f187e4b</id>
+      <BoundTo>8418952f-fdac-44af-8783-eb2af31cbb53</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonCreateWallet.UserCode.cs">
+      <DependentUpon>ClickButtonCreateWallet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a3dd3f80-527f-4d0f-aa7e-dd764849afc9</id>
+      <BoundTo>8418952f-fdac-44af-8783-eb2af31cbb53</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonDownload.cs">
+      <DependentUpon>ClickButtonDownload.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>372f3d5e-e30a-4099-9cd7-49cee114f473</id>
+      <BoundTo>34eccdc5-b756-4ec2-a264-9ec66dd27ee5</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonDownload.UserCode.cs">
+      <DependentUpon>ClickButtonDownload.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b38c9bcc-b031-47fe-a9c8-665bf2ad055d</id>
+      <BoundTo>34eccdc5-b756-4ec2-a264-9ec66dd27ee5</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonGetWalletAddress.cs">
+      <DependentUpon>ClickButtonGetWalletAddress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fd45852f-1032-4b99-b060-60ff6d82545e</id>
+      <BoundTo>b2bea525-a012-4139-bbfc-22d0ae63562e</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonGetWalletAddress.UserCode.cs">
+      <DependentUpon>ClickButtonGetWalletAddress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>f78df421-af91-42ac-a2f5-c9d1a0050587</id>
+      <BoundTo>b2bea525-a012-4139-bbfc-22d0ae63562e</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonUpdate.cs">
+      <DependentUpon>ClickButtonUpdate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b712ee78-4445-4102-9768-9594d643a2a9</id>
+      <BoundTo>e629d741-f8ba-489e-addf-b1ea7492c739</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonUpdate.UserCode.cs">
+      <DependentUpon>ClickButtonUpdate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c1a7985f-f93a-49b3-bb37-63e865978445</id>
+      <BoundTo>e629d741-f8ba-489e-addf-b1ea7492c739</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\DoubleClickWalletDefault.cs">
+      <DependentUpon>DoubleClickWalletDefault.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9e48b11e-e028-4856-881a-e7313970944a</id>
+      <BoundTo>d820e8ce-fe2f-4d21-ab86-dbede262b417</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Click\DoubleClickWalletDefault.UserCode.cs">
+      <DependentUpon>DoubleClickWalletDefault.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>22178966-f8bd-46a8-b5b9-d99912df0cbe</id>
+      <BoundTo>d820e8ce-fe2f-4d21-ab86-dbede262b417</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\FillAllTextboxInPanelEditDbcWallet.cs">
+      <DependentUpon>FillAllTextboxInPanelEditDbcWallet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1c3eb261-c517-497b-9b4b-ba0074e589db</id>
+      <BoundTo>3cfcf366-4e18-439c-a3fb-33c5ee268a06</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\FillAllTextboxInPanelEditDbcWallet.UserCode.cs">
+      <DependentUpon>FillAllTextboxInPanelEditDbcWallet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cda4a4eb-512e-479f-9140-ea43696b7822</id>
+      <BoundTo>3cfcf366-4e18-439c-a3fb-33c5ee268a06</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\FillName.cs">
+      <BoundTo>53d633ad-4727-4bc7-836d-3b47f48e0f5b</BoundTo>
+      <DependentUpon>FillName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a4ebc8da-0969-484a-8582-78202a7f1eca</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\FillName.UserCode.cs">
+      <BoundTo>53d633ad-4727-4bc7-836d-3b47f48e0f5b</BoundTo>
+      <DependentUpon>FillName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bf1b478e-5279-4a00-8469-6636139ee8d6</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\FillWalletName.cs">
+      <BoundTo>3c3cc33c-ca8e-4534-bf45-fa1b73ec16de</BoundTo>
+      <DependentUpon>FillWalletName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5d2e6e2-99a9-4aae-a313-6a70c95ac47d</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\FillWalletName.UserCode.cs">
+      <BoundTo>3c3cc33c-ca8e-4534-bf45-fa1b73ec16de</BoundTo>
+      <DependentUpon>FillWalletName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>90ae148a-9a65-42ee-8a45-2de3f44cb4da</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\UploadWallet.cs">
+      <BoundTo>61685985-0184-4a04-9f58-32f34afa2497</BoundTo>
+      <DependentUpon>UploadWallet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>74a27ea9-9993-4ca9-b064-7d9d461884b9</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\UploadWallet.UserCode.cs">
+      <BoundTo>61685985-0184-4a04-9f58-32f34afa2497</BoundTo>
+      <DependentUpon>UploadWallet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>42f43ec0-890a-4484-adb1-498b9aad1e87</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateAddNewDbcWalletFail.cs">
+      <DependentUpon>ValidateAddNewDbcWalletFail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>af570e8d-535b-4883-b6de-7c9bad88b3aa</id>
+      <BoundTo>350fe680-b539-4ede-a591-289c79b27270</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateAddNewDbcWalletFail.UserCode.cs">
+      <DependentUpon>ValidateAddNewDbcWalletFail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a8c7a80a-025d-4b0e-ae9d-c6f69ecd5d59</id>
+      <BoundTo>350fe680-b539-4ede-a591-289c79b27270</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateAddNewWalletPass.cs">
+      <DependentUpon>ValidateAddNewWalletPass.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>08ab156e-b771-46c4-9b82-c4598a68fd10</id>
+      <BoundTo>0f074f65-0970-4625-8475-352f3dd7d835</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateAddNewWalletPass.UserCode.cs">
+      <DependentUpon>ValidateAddNewWalletPass.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9783d893-71a7-47d0-9fe4-0bc1df6610eb</id>
+      <BoundTo>0f074f65-0970-4625-8475-352f3dd7d835</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateCannelEditWalletDefault.cs">
+      <DependentUpon>ValidateCannelEditWalletDefault.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>327d1f53-8207-4a0d-99cf-4ca21c9917f8</id>
+      <BoundTo>ff3cba37-c1ad-4a81-908d-e7fd73526f98</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateCannelEditWalletDefault.UserCode.cs">
+      <DependentUpon>ValidateCannelEditWalletDefault.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>457a7cc3-839e-44aa-b592-222e55f7ae42</id>
+      <BoundTo>ff3cba37-c1ad-4a81-908d-e7fd73526f98</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateCreateWalletSuccess.cs">
+      <DependentUpon>ValidateCreateWalletSuccess.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>df873ffc-742f-4692-83c3-64dc387738bd</id>
+      <BoundTo>4a7a3c33-6b43-4925-a681-f0f1008fa977</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateCreateWalletSuccess.UserCode.cs">
+      <DependentUpon>ValidateCreateWalletSuccess.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b10144e2-70b2-4cd0-a6e3-b332bd7b595c</id>
+      <BoundTo>4a7a3c33-6b43-4925-a681-f0f1008fa977</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateMessageErrorCreateWallet.cs">
+      <DependentUpon>ValidateMessageErrorCreateWallet.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>65063957-834d-4f9e-aa79-0dfff50a35ac</id>
+      <BoundTo>500d384d-f8b6-4445-a153-acb830d32637</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateMessageErrorCreateWallet.UserCode.cs">
+      <DependentUpon>ValidateMessageErrorCreateWallet.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>353a6f89-ca5c-4ec6-8cb3-3ebbddc80619</id>
+      <BoundTo>500d384d-f8b6-4445-a153-acb830d32637</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateTextboxWalletAddressNull.cs">
+      <DependentUpon>ValidateTextboxWalletAddressNull.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e8cc9d49-94e5-4d40-9b49-38aa5c024f89</id>
+      <BoundTo>67e24b4c-4761-4b81-a2f6-f0ad16b8999d</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateTextboxWalletAddressNull.UserCode.cs">
+      <DependentUpon>ValidateTextboxWalletAddressNull.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>17119486-d9dc-46bf-a7d4-d009513a3343</id>
+      <BoundTo>67e24b4c-4761-4b81-a2f6-f0ad16b8999d</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUpdateWalletFail.cs">
+      <DependentUpon>ValidateUpdateWalletFail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e4e6b4df-30eb-4081-806b-1eef775199b4</id>
+      <BoundTo>2c558cf8-ecf7-4366-9839-ee11acb015eb</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUpdateWalletFail.UserCode.cs">
+      <DependentUpon>ValidateUpdateWalletFail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65b5c34b-1ae0-420b-8d5a-aad2a8caf322</id>
+      <BoundTo>2c558cf8-ecf7-4366-9839-ee11acb015eb</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUpdateWalletInformationSuccess.cs">
+      <DependentUpon>ValidateUpdateWalletInformationSuccess.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>511f18ac-88f4-4907-93fc-2adcddeeb766</id>
+      <BoundTo>10bd7428-073b-4b11-b1eb-7da8eb4ae3b4</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUpdateWalletInformationSuccess.UserCode.cs">
+      <DependentUpon>ValidateUpdateWalletInformationSuccess.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a8cb407-7789-4840-964e-05bfb7aa4b5a</id>
+      <BoundTo>10bd7428-073b-4b11-b1eb-7da8eb4ae3b4</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUploadWalletError.cs">
+      <DependentUpon>ValidateUploadWalletError.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>84b61940-2949-4a75-9c2f-76e81cef924e</id>
+      <BoundTo>2b9c997a-0df1-40be-bba4-80f5f12c27a8</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUploadWalletError.UserCode.cs">
+      <DependentUpon>ValidateUploadWalletError.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e62313af-8671-4500-9680-5d20aa416751</id>
+      <BoundTo>2b9c997a-0df1-40be-bba4-80f5f12c27a8</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\DragAndDropDBCGroup.cs">
+      <DependentUpon>DragAndDropDBCGroup.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4cfa5966-bfe9-457d-85d8-32d2a60cd3f7</id>
+      <BoundTo>a6271406-2703-443d-8006-b5c742abb65a</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\DragAndDropDBCGroup.UserCode.cs">
+      <DependentUpon>DragAndDropDBCGroup.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>dc0655cd-2e14-43b2-9de3-c8dbf6d56956</id>
+      <BoundTo>a6271406-2703-443d-8006-b5c742abb65a</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\FillDataGroupEdit.cs">
+      <BoundTo>f1333cbe-f396-44bb-b006-b555d8085c40</BoundTo>
+      <DependentUpon>FillDataGroupEdit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0c8487d9-cb56-46ec-a785-08de199196a3</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\FillDataGroupEdit.UserCode.cs">
+      <BoundTo>f1333cbe-f396-44bb-b006-b555d8085c40</BoundTo>
+      <DependentUpon>FillDataGroupEdit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b7fbae80-473d-42b6-913f-20030f0aabf9</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\ValidateGroupIDNotNull.cs">
+      <BoundTo>3aebb5ad-1446-4889-88a4-133a5f8acaa7</BoundTo>
+      <DependentUpon>ValidateGroupIDNotNull.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>9b0e6195-16d8-4dc1-bba7-4c1806df7a86</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\ValidateGroupIDNotNull.UserCode.cs">
+      <BoundTo>3aebb5ad-1446-4889-88a4-133a5f8acaa7</BoundTo>
+      <DependentUpon>ValidateGroupIDNotNull.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3a58ef78-1579-4d67-bdc8-bd6630341d18</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\ValidatePropertyDefaultGroupEdit.cs">
+      <BoundTo>a88404da-7647-4be3-a077-ed4132240114</BoundTo>
+      <DependentUpon>ValidatePropertyDefaultGroupEdit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>92ef8c11-d60d-4c59-9143-294537d1a77e</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\GroupEdit\ValidatePropertyDefaultGroupEdit.UserCode.cs">
+      <BoundTo>a88404da-7647-4be3-a077-ed4132240114</BoundTo>
+      <DependentUpon>ValidatePropertyDefaultGroupEdit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>332e6a38-d6b9-443c-ae7d-d643e0dcee71</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\CancelLogin.cs">
+      <BoundTo>744230ac-67b6-4f4a-b014-0a4139cd9bb9</BoundTo>
+      <DependentUpon>CancelLogin.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>cb541e71-6b6b-4768-b1ff-b43d09172966</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\CancelLogin.UserCode.cs">
+      <BoundTo>744230ac-67b6-4f4a-b014-0a4139cd9bb9</BoundTo>
+      <DependentUpon>CancelLogin.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>99717edc-711b-4c01-8676-dba62dc93a2a</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\LoginFail.cs">
+      <BoundTo>c717def1-5129-4fb7-809f-e63bbdf6f907</BoundTo>
+      <DependentUpon>LoginFail.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d5c7d99e-1cc2-4128-ae9c-e97d2b51af9c</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\LoginFail.UserCode.cs">
+      <BoundTo>c717def1-5129-4fb7-809f-e63bbdf6f907</BoundTo>
+      <DependentUpon>LoginFail.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>437386ba-b705-4239-bb90-b33ce4d20fb8</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\LoginFailWalletNull.cs">
+      <BoundTo>455e607e-02ab-4731-8649-c56babe43882</BoundTo>
+      <DependentUpon>LoginFailWalletNull.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6be9c435-b77b-437c-a4d2-e0161d9d5da3</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\LoginFailWalletNull.UserCode.cs">
+      <BoundTo>455e607e-02ab-4731-8649-c56babe43882</BoundTo>
+      <DependentUpon>LoginFailWalletNull.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c68714da-bd09-472e-b06d-3d35604743ea</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\LoginSuccess.cs">
+      <BoundTo>6d89e6f6-f451-4fe3-b865-d6a72410a91a</BoundTo>
+      <DependentUpon>LoginSuccess.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b3b33d39-0d92-4f66-a920-29821772ac8a</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\Login\LoginSuccess.UserCode.cs">
+      <BoundTo>6d89e6f6-f451-4fe3-b865-d6a72410a91a</BoundTo>
+      <DependentUpon>LoginSuccess.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>8394f784-043a-486b-972a-031ce93c458d</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\OpenBrowser.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d206f859-667e-45ca-8ea1-c626a38ff05d</id>
+      <BoundTo>0aa35003-bcd2-4c68-ae07-40dee2f4eb5a</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\OpenBrowser.UserCode.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>9b23f2d8-7bd8-4553-91b9-fed0b81582a5</id>
+      <BoundTo>0aa35003-bcd2-4c68-ae07-40dee2f4eb5a</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\Click\ClickBtnDone.cs">
+      <BoundTo>a7a67325-0c16-4f48-a15e-256c9d932f75</BoundTo>
+      <DependentUpon>ClickBtnDone.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>957c36af-1e7b-4af0-af8c-d021b45c0782</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\Click\ClickBtnDone.UserCode.cs">
+      <BoundTo>a7a67325-0c16-4f48-a15e-256c9d932f75</BoundTo>
+      <DependentUpon>ClickBtnDone.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e86ddee6-239b-47ca-958f-6dc96b3b2845</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\Click\ClickCheckboxContentType.cs">
+      <BoundTo>c13e62e6-d46a-4e7a-8029-c238b04a7b9e</BoundTo>
+      <DependentUpon>ClickCheckboxContentType.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f1cb6cb7-4b2e-47a0-b1a6-7e3796860d15</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\Click\ClickCheckboxContentType.UserCode.cs">
+      <BoundTo>c13e62e6-d46a-4e7a-8029-c238b04a7b9e</BoundTo>
+      <DependentUpon>ClickCheckboxContentType.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a7ca6323-2c16-44a7-9463-5a54b622ed38</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\Click\ClickVisibleDomain.cs">
+      <DependentUpon>ClickVisibleDomain.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b29f6951-4a76-4bf1-abc1-bfdf8df6da9e</id>
+      <BoundTo>0c8180c3-1975-45a6-8032-2eadbe8152d8</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\Click\ClickVisibleDomain.UserCode.cs">
+      <DependentUpon>ClickVisibleDomain.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>33a79ca2-a3e3-450b-a363-b6e93076639b</id>
+      <BoundTo>0c8180c3-1975-45a6-8032-2eadbe8152d8</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\DragAndDropDBCSign.cs">
+      <BoundTo>58d3c72a-bb67-4c02-a91f-bc56b23a345f</BoundTo>
+      <DependentUpon>DragAndDropDBCSign.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>18973169-02f0-4012-8890-d5d028d1bbcf</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\DragAndDropDBCSign.UserCode.cs">
+      <BoundTo>58d3c72a-bb67-4c02-a91f-bc56b23a345f</BoundTo>
+      <DependentUpon>DragAndDropDBCSign.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ce0c7d28-4a4c-4f14-876d-cf6be1efc847</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\FillSignEdit.cs">
+      <BoundTo>764198c3-ba10-4b51-a939-e8e079755ef5</BoundTo>
+      <DependentUpon>FillSignEdit.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>b5df0aec-158f-4bc4-99f9-d30cd259b8fc</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\FillSignEdit.UserCode.cs">
+      <BoundTo>764198c3-ba10-4b51-a939-e8e079755ef5</BoundTo>
+      <DependentUpon>FillSignEdit.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>5334ec20-a545-41ae-be1b-35f2ec0d9065</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\ValidatePropertyDefault.cs">
+      <BoundTo>8b107072-0532-4147-b000-9ce281e4c465</BoundTo>
+      <DependentUpon>ValidatePropertyDefault.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f162a4fc-2af5-497d-a7e1-1c193495624b</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\SignEdit\ValidatePropertyDefault.UserCode.cs">
+      <BoundTo>8b107072-0532-4147-b000-9ce281e4c465</BoundTo>
+      <DependentUpon>ValidatePropertyDefault.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>84e35e6b-3fdc-4322-bf60-a1eba18bd20a</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\ClickConfirmDeploy.cs">
+      <BoundTo>066c8c49-5e08-42ed-a4fa-2e249ddb53b6</BoundTo>
+      <DependentUpon>ClickConfirmDeploy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2c52aa71-1b61-45b2-b3ab-0d587965a6b6</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\ClickConfirmDeploy.UserCode.cs">
+      <BoundTo>066c8c49-5e08-42ed-a4fa-2e249ddb53b6</BoundTo>
+      <DependentUpon>ClickConfirmDeploy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1ebc5dcc-66b0-4c84-9881-abceecbc8886</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\DeployFullMode.cs">
+      <DependentUpon>DeployFullMode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>26de3b32-ee7a-4ee7-9bcc-e1996f5f8df7</id>
+      <BoundTo>56400de5-2609-4d33-8f6d-b7a74a6a07cb</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\DeployFullMode.UserCode.cs">
+      <DependentUpon>DeployFullMode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c9e5623b-d813-4828-aad8-f88461fb5dcc</id>
+      <BoundTo>56400de5-2609-4d33-8f6d-b7a74a6a07cb</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\DeployModifiedFlowsMode.cs">
+      <BoundTo>15c9e4c6-0557-4572-9e3e-f90b56fe2eab</BoundTo>
+      <DependentUpon>DeployModifiedFlowsMode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>7e455bda-6e8f-4c46-85f3-355b3e4b70c2</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\DeployModifiedFlowsMode.UserCode.cs">
+      <BoundTo>15c9e4c6-0557-4572-9e3e-f90b56fe2eab</BoundTo>
+      <DependentUpon>DeployModifiedFlowsMode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>65f61570-1df8-4667-9883-6523a0a330dc</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\DeployModifiedNodesMode.cs">
+      <BoundTo>c02c7940-cf6f-4b22-8da2-7acd599cb47c</BoundTo>
+      <DependentUpon>DeployModifiedNodesMode.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>f43219ad-70d0-4d7f-920a-c280cfd74adf</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\DeployModifiedNodesMode.UserCode.cs">
+      <BoundTo>c02c7940-cf6f-4b22-8da2-7acd599cb47c</BoundTo>
+      <DependentUpon>DeployModifiedNodesMode.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>ba6f3f54-21a3-455b-a49d-5dbe1cd1064e</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\ValidateDeployFailed.cs">
+      <BoundTo>146da2d6-766c-419b-874e-b0ad4855bd6a</BoundTo>
+      <DependentUpon>ValidateDeployFailed.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c0a5eb3d-1d51-4ad3-9b17-41153ee0c017</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\ValidateDeployFailed.UserCode.cs">
+      <BoundTo>146da2d6-766c-419b-874e-b0ad4855bd6a</BoundTo>
+      <DependentUpon>ValidateDeployFailed.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>87b745d1-9c32-4791-9b72-e9733121b6b1</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\ValidateDeploySuccess.cs">
+      <DependentUpon>ValidateDeploySuccess.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>6dad116f-dbba-4674-b2fe-678eb372dd90</id>
+      <BoundTo>28fbd94d-7a5b-4c50-8ebb-4d9dbde38dcb</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\TabBar\ValidateDeploySuccess.UserCode.cs">
+      <DependentUpon>ValidateDeploySuccess.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>32955261-b5d0-41c6-8dfc-808f8c9dbdad</id>
+      <BoundTo>28fbd94d-7a5b-4c50-8ebb-4d9dbde38dcb</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\WalletEdit\DragAndDropDBCContract.cs">
+      <BoundTo>fce366c6-3c9d-475a-a09a-83fd33257f0f</BoundTo>
+      <DependentUpon>DragAndDropDBCContract.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0c076dbc-b76b-4b57-9b21-d1d57eeb9b91</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\WalletEdit\DragAndDropDBCContract.UserCode.cs">
+      <BoundTo>fce366c6-3c9d-475a-a09a-83fd33257f0f</BoundTo>
+      <DependentUpon>DragAndDropDBCContract.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4dfc0a07-7d5c-4912-a46b-cad5bbf8d9a6</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\WalletEdit\DragAndDropDBCStore.cs">
+      <BoundTo>b034a7ff-cc99-4ad5-a5e4-f19b1e6409df</BoundTo>
+      <DependentUpon>DragAndDropDBCStore.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>ceb22c41-667a-4419-ac25-192079fe992f</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\WalletEdit\DragAndDropDBCStore.UserCode.cs">
+      <BoundTo>b034a7ff-cc99-4ad5-a5e4-f19b1e6409df</BoundTo>
+      <DependentUpon>DragAndDropDBCStore.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>a1163f28-e65d-4046-b63f-82546860f4e6</id>
+    </Compile>
+    <Compile Include="DBC3-IDE\WalletEdit\DragAndDropDBCUser.cs">
+      <DependentUpon>DragAndDropDBCUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>1b33cbcf-0419-4230-8549-47506984faa9</id>
+      <BoundTo>1556b304-93f1-4353-996f-798b484eed8e</BoundTo>
+    </Compile>
+    <Compile Include="DBC3-IDE\WalletEdit\DragAndDropDBCUser.UserCode.cs">
+      <DependentUpon>DragAndDropDBCUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>cf04b9c3-5523-42a5-8d93-f60dfc138272</id>
+      <BoundTo>1556b304-93f1-4353-996f-798b484eed8e</BoundTo>
+    </Compile>
+    <Compile Include="DBC3_IDERepository.cs">
+      <DependentUpon>DBC3_IDERepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>877dad2e-f79e-4632-a220-e9ce6f54bf95</id>
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickDomainLink.cs">
+      <BoundTo>5e49b622-e532-4b45-9961-6e92206012a4</BoundTo>
+      <DependentUpon>ClickDomainLink.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c439053d-00b1-49f1-b38f-a89d7fc7c81f</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickDomainLink.UserCode.cs">
+      <BoundTo>5e49b622-e532-4b45-9961-6e92206012a4</BoundTo>
+      <DependentUpon>ClickDomainLink.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e0ded2db-433a-479a-811e-baf73aee8f17</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickDomainName.cs">
+      <DependentUpon>ClickDomainName.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d532b4f-83eb-4f7b-9540-99589cbe4304</id>
+      <BoundTo>5e44fbd7-d24c-457e-a3bf-e9928b196678</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickDomainName.UserCode.cs">
+      <DependentUpon>ClickDomainName.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>c81f2616-24a6-4da3-9f6d-18103872ed3a</id>
+      <BoundTo>5e44fbd7-d24c-457e-a3bf-e9928b196678</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickGroupsLink.cs">
+      <BoundTo>e7083c15-4325-400e-8ee5-b0644edea3ab</BoundTo>
+      <DependentUpon>ClickGroupsLink.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3f21d330-5afc-46fe-a3f0-d82be8cb0ce0</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickGroupsLink.UserCode.cs">
+      <BoundTo>e7083c15-4325-400e-8ee5-b0644edea3ab</BoundTo>
+      <DependentUpon>ClickGroupsLink.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>864c103a-cf24-42bc-93e8-9e79173216c8</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickNewTransaction.cs">
+      <DependentUpon>ClickNewTransaction.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>fc240e27-0a00-4b40-a69f-4d64091741aa</id>
+      <BoundTo>92f01ebc-a7a9-4b61-9cbf-8141723736e1</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickNewTransaction.UserCode.cs">
+      <DependentUpon>ClickNewTransaction.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>7ab09d4e-c240-4821-ac86-c7415b317394</id>
+      <BoundTo>92f01ebc-a7a9-4b61-9cbf-8141723736e1</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickUserNameFromUsersList.cs">
+      <BoundTo>df3e6c4c-09e9-45e1-ae40-7ed7a1ba99a6</BoundTo>
+      <DependentUpon>ClickUserNameFromUsersList.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>dce077bd-1e65-4540-b88c-9faa36f0eacf</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickUserNameFromUsersList.UserCode.cs">
+      <BoundTo>df3e6c4c-09e9-45e1-ae40-7ed7a1ba99a6</BoundTo>
+      <DependentUpon>ClickUserNameFromUsersList.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>23f8ceb4-cb5c-4221-b3a9-bc8edcccaa75</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickUsersLink.cs">
+      <BoundTo>7eeb2eb9-a37e-4f8c-ae7f-25ec88f011af</BoundTo>
+      <DependentUpon>ClickUsersLink.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d233f0dd-2b47-49c1-b7ee-2b770f60697d</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickUsersLink.UserCode.cs">
+      <BoundTo>7eeb2eb9-a37e-4f8c-ae7f-25ec88f011af</BoundTo>
+      <DependentUpon>ClickUsersLink.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0ed0752e-0db8-4a17-ab13-ac59d9fea2a4</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickViewInitCodeDomain.cs">
+      <BoundTo>d75fd8f4-3884-4b03-8420-d7ef1b577df8</BoundTo>
+      <DependentUpon>ClickViewInitCodeDomain.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>aa0be000-f473-46c2-9786-35270803ebf6</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Click\ClickViewInitCodeDomain.UserCode.cs">
+      <BoundTo>d75fd8f4-3884-4b03-8420-d7ef1b577df8</BoundTo>
+      <DependentUpon>ClickViewInitCodeDomain.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4009679d-d4b5-4588-80b7-0d3e83a6ba82</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\CloseBrowser.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>83a76f69-0ad7-42cb-8d05-cbc1d3ea4dbb</id>
+      <BoundTo>8181b0da-a881-429a-845b-dc8d63e438d3</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\CloseBrowser.UserCode.cs">
+      <DependentUpon>CloseBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4ab2be81-2bb0-4235-ba29-84c2f6fea055</id>
+      <BoundTo>8181b0da-a881-429a-845b-dc8d63e438d3</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\CreateNewDomain.cs">
+      <BoundTo>2e6d6551-8cc9-4294-9702-a72dd583cccd</BoundTo>
+      <DependentUpon>CreateNewDomain.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>d8370b14-cfe2-42d1-ae53-4eacbb9ec7b2</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\CreateNewDomain.UserCode.cs">
+      <BoundTo>2e6d6551-8cc9-4294-9702-a72dd583cccd</BoundTo>
+      <DependentUpon>CreateNewDomain.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>25ed6622-ff76-46fd-a9c6-49cf6728727c</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\CreateNewTransactionC1Create.cs">
+      <BoundTo>2ee86795-fd35-403f-a244-bc867c5a7634</BoundTo>
+      <DependentUpon>CreateNewTransactionC1Create.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>610f4bf8-8b7d-4e0b-8426-9d947b903a95</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\CreateNewTransactionC1Create.UserCode.cs">
+      <BoundTo>2ee86795-fd35-403f-a244-bc867c5a7634</BoundTo>
+      <DependentUpon>CreateNewTransactionC1Create.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>247b4c00-2b42-4377-9836-d6f289b1723c</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\DeleteFromC1terminate.cs">
+      <BoundTo>1bf5967d-f0c4-413b-9216-5ea782cd475c</BoundTo>
+      <DependentUpon>DeleteFromC1terminate.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>72c85ad6-32ad-4264-96b9-f7b034a19a6f</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\DeleteFromC1terminate.UserCode.cs">
+      <BoundTo>1bf5967d-f0c4-413b-9216-5ea782cd475c</BoundTo>
+      <DependentUpon>DeleteFromC1terminate.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>acd7ebad-5056-45f3-886c-41cce68ac440</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\GetNewWalletAddress.cs">
+      <BoundTo>7175647a-3f96-48ca-ba5f-3304321c4a04</BoundTo>
+      <DependentUpon>GetNewWalletAddress.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>3dfd6900-479f-4776-ac27-0c1cd27ce41e</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\GetNewWalletAddress.UserCode.cs">
+      <BoundTo>7175647a-3f96-48ca-ba5f-3304321c4a04</BoundTo>
+      <DependentUpon>GetNewWalletAddress.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d374c387-a6d8-47a5-89e8-871288a572ac</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\GroupList\ValidateNameGroupEmpty.cs">
+      <BoundTo>d5700ae0-f631-4f5a-b378-db48d31fb92d</BoundTo>
+      <DependentUpon>ValidateNameGroupEmpty.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>a5e04b5b-5116-4d36-9452-16815f6d7b5e</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\GroupList\ValidateNameGroupEmpty.UserCode.cs">
+      <BoundTo>d5700ae0-f631-4f5a-b378-db48d31fb92d</BoundTo>
+      <DependentUpon>ValidateNameGroupEmpty.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>4d58685d-f4fb-4951-a8a9-246ee77e1dbb</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Login.cs">
+      <BoundTo>507d62b1-eda3-4f5d-a396-978e26b2a658</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>14e0a6f7-3727-4e25-9bbe-45eccf064c48</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Login.UserCode.cs">
+      <BoundTo>507d62b1-eda3-4f5d-a396-978e26b2a658</BoundTo>
+      <DependentUpon>Login.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>0494ac60-ae56-4b58-8ebf-b86300a92c4a</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\OpenBrowser.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>09e68209-ef79-45f4-8828-785e547e5eb2</id>
+      <BoundTo>d2bce5bb-7fa0-4384-8a07-93c43664516d</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\OpenBrowser.UserCode.cs">
+      <DependentUpon>OpenBrowser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>bec93005-31f9-4683-9203-1c8ccdb7de0b</id>
+      <BoundTo>d2bce5bb-7fa0-4384-8a07-93c43664516d</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Search.cs">
+      <BoundTo>9913312e-3c95-429b-b7c6-08e5868eb53a</BoundTo>
+      <DependentUpon>Search.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>11e27089-6d04-47be-bbe7-3a7efe84ed48</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\Search.UserCode.cs">
+      <BoundTo>9913312e-3c95-429b-b7c6-08e5868eb53a</BoundTo>
+      <DependentUpon>Search.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>987ec990-7121-4e47-a1f9-c455ceb59559</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\SetWalletForNewUser.cs">
+      <BoundTo>85d56967-2174-4e26-876b-b04f2ace2049</BoundTo>
+      <DependentUpon>SetWalletForNewUser.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>30f6f3f8-9db3-42b5-9c60-43c39fea83ec</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\SetWalletForNewUser.UserCode.cs">
+      <BoundTo>85d56967-2174-4e26-876b-b04f2ace2049</BoundTo>
+      <DependentUpon>SetWalletForNewUser.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>3c329efc-74d9-4c29-b387-e5fc385923a4</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateDisclosedTo.cs">
+      <BoundTo>0b2459cb-e4c0-468f-a6f5-cee90119a22b</BoundTo>
+      <DependentUpon>ValidateDisclosedTo.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>2d964f65-85dd-4b99-838c-49fd4fdcf24d</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateDisclosedTo.UserCode.cs">
+      <BoundTo>0b2459cb-e4c0-468f-a6f5-cee90119a22b</BoundTo>
+      <DependentUpon>ValidateDisclosedTo.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d139aee9-9351-44ba-9e36-fc1351b74876</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateDomainCodeDeploy.cs">
+      <DependentUpon>ValidateDomainCodeDeploy.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>4c530668-60eb-4db1-8728-40a5d55d4614</id>
+      <BoundTo>bea074bf-bc1c-4c57-a778-4436eb5d1ec9</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateDomainCodeDeploy.UserCode.cs">
+      <DependentUpon>ValidateDomainCodeDeploy.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>fcc186f8-f5c0-4a31-a4ec-ea223dafed0f</id>
+      <BoundTo>bea074bf-bc1c-4c57-a778-4436eb5d1ec9</BoundTo>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateDomainCodeDeployempty.cs">
+      <BoundTo>b700dc88-bdf3-4ac0-9536-013e60d56110</BoundTo>
+      <DependentUpon>ValidateDomainCodeDeployempty.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>c69769a6-cc75-49af-bc16-347136d74477</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateDomainCodeDeployempty.UserCode.cs">
+      <BoundTo>b700dc88-bdf3-4ac0-9536-013e60d56110</BoundTo>
+      <DependentUpon>ValidateDomainCodeDeployempty.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>d1661a98-ba0c-49dd-97a7-e447379955de</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateIDUserNotNull.cs">
+      <BoundTo>19f0c6d0-caab-439a-9745-782b2c9b7219</BoundTo>
+      <DependentUpon>ValidateIDUserNotNull.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>e06d1cb6-3847-4ba6-8ac3-e1fa36ee180e</id>
+    </Compile>
+    <Compile Include="DNCWareNetwork\ValidateIDUserNotNull.UserCode.cs">
+      <BoundTo>19f0c6d0-caab-439a-9745-782b2c9b7219</BoundTo>
+      <DependentUpon>ValidateIDUserNotNull.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>1f761fe0-a411-4f60-897a-dd2311e55ae1</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>2e5da113-340b-4467-adc3-3965acf55e1d</id>
+    </Compile>
+    <Compile Include="Recording1.cs">
+      <BoundTo>afb212f7-b966-4d37-8be8-2285436f3bd1</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>30a40cda-6fa8-4248-839b-750609dd9f4a</id>
+    </Compile>
+    <Compile Include="Recording1.UserCode.cs">
+      <BoundTo>afb212f7-b966-4d37-8be8-2285436f3bd1</BoundTo>
+      <DependentUpon>Recording1.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>e4470c8e-cc32-4007-a50f-3a609c3c7562</id>
+    </Compile>
+    <Compile Include="Utilities.cs">
+      <id>da50fbf9-7124-4c6c-a1f4-7c8371645a07</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBC3_IDE_DomainCode.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b0d3bdfc-351d-424a-bd9f-27164b9cf419</id>
+    </Content>
+    <Content Include="DBC3_IDE_GroupEdit.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>04af1cd3-2701-46e4-8e45-1c7460f21080</id>
+    </Content>
+    <Content Include="DBC3_IDE_SignEdit.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>1d17e8d7-2e06-4fbb-be81-075f0bc53dcc</id>
+    </Content>
+    <Content Include="DBC3_IDE_UserEdit.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>280acfd5-75fd-4efe-922d-ff8c35c3f0b1</id>
+    </Content>
+    <Content Include="DBC3_IDE_WalletEdit.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>846af401-3b1a-4746-aa3a-a3f9b82c3045</id>
+    </Content>
+    <None Include="app.config">
+      <id>4cd3e653-dd06-4358-822e-2a7e25ba7d9d</id>
+    </None>
+    <Content Include="DBC3-IDE.rxsqc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>473123e9-18be-4d69-abdb-a204e18982d2</id>
+    </Content>
+    <None Include="DBC3-IDE\CloseBrowser.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>8ee2eeb3-97ef-4552-9b2b-2b6f72828a6b</id>
+      <recordtableid>1eb16927-dcfd-4e57-821e-0b1d8337992d</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\CommonRecording\ClickButtonCancel.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>32a1b892-2475-46e6-a1ac-0c7c184f683b</id>
+      <recordtableid>9b020f83-c703-498e-a412-96a9e754e6ff</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\CommonRecording\ClickCenterDashboard.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>90c0f99c-213a-4113-a9db-89032a6ca4ce</id>
+      <recordtableid>350abb0f-ce80-4058-ac50-dd32c26fdc6e</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\CommonRecording\ClickDeleteButton.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>fcdf5ebb-28e3-4b35-8288-2856230f8eca</id>
+      <recordtableid>5116dae2-e34a-43b4-92a6-32da6782e9ae</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\CommonRecording\ClickDone.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>b3b21a84-1504-47b0-b753-39e487317138</id>
+      <recordtableid>6bceb84e-bf17-44a5-a00a-42ba71823e8f</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\CommonRecording\ClickEnableButton.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>b895a265-d1fe-4b81-a3e7-25074cd6e03f</id>
+      <recordtableid>b51a4d91-8f5b-4a69-b769-b656fd593586</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\CommonRecording\FillImformationDescription.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>44f3f0ec-cc56-43a2-be3e-0fd01acf302f</id>
+      <recordtableid>f3bde2eb-7348-411f-9049-5d68a87e2ebc</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\ChooseDomainDefault.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>f130a462-453f-4d65-b92d-b5a0cb0caef4</id>
+      <recordtableid>5e98b1b1-4db1-4193-aca5-4c03725ae6af</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\ClickCancel.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>fed58b5d-c5bd-4c36-a118-7894a466b5d6</id>
+      <recordtableid>fcfffa7a-842a-4749-a842-5317403ab9f0</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\ClickExpand.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>cb319d5d-23f5-405d-aaa6-39b5c54e7e86</id>
+      <recordtableid>87772be3-cf47-4367-9014-289b780a0fe8</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\ClickUpdate.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>2d1fce81-d752-40ae-aa92-fd2256b28376</id>
+      <recordtableid>ba140270-3ba7-4b9a-83a3-de2e420cd410</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\DoubleDomainDefault.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>4f747c7d-8822-4abd-89a9-0c5a1a2256f9</id>
+      <recordtableid>b38e88f5-17b0-401e-91d6-956761743989</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\FillDomainCode.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>578a0ab0-24b9-46e7-8142-d2ffbe0a8af2</id>
+      <recordtableid>d127fd8d-274d-4c33-a234-78c9825a22f7</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\FillDomainCodeExpand.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>79a4c3c2-ebf4-4c10-b71d-742c7a129af8</id>
+      <recordtableid>8ad73c57-37d9-4bc7-bf50-ed4c5cfb4c58</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\RemoveDomainCode.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>08643abe-d24a-403e-a22f-a1c9074759ec</id>
+      <recordtableid>42d38bc7-5d31-44a0-817c-d81f4b7541a0</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\ValidateDomainCodeEmpty.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>7fb0d755-aa11-4988-b39c-ef2f9eef8817</id>
+      <recordtableid>f9fed188-4cc1-46d2-9202-212be3aa1556</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>598870fe-0b21-4c6d-aac2-c9020ea09109</id>
+      <recordtableid>96b87d8b-c10f-463a-af4f-729d3ce6bd56</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\DomainCode\ValidateDomainDefault.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>a4810e19-c73f-4b6b-8384-3af87131d3b8</id>
+      <recordtableid>2582da86-6ef1-4b22-bcdf-3815f610cf65</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\AddWalletAddress.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>8ea7bbb8-79f2-4436-aa2c-25f30e8debd8</id>
+      <recordtableid>a3216ab8-a22c-42b3-982c-9a41d80db167</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\ChooseWalletOption.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>1af6776a-ef9e-4463-91d6-4a2890d17da3</id>
+      <recordtableid>2016e64e-da37-47c4-89e4-9035739f47d7</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\Click\ClickButtonDone.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>0fc7df1b-b9d7-4542-ae2b-9dc572226fc7</id>
+      <recordtableid>0b9904f0-a294-4af1-81d3-b64b1e1e6d29</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\Click\ClickDisclosedToAll.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>36aa8328-d7a3-4b35-b584-6d4e7945815c</id>
+      <recordtableid>87b59dde-a34b-487c-bd6c-642d902209f8</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\Click\ClickEditWalletButton.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>058c7649-fb18-4936-88f0-f26db4415a98</id>
+      <recordtableid>56564ec9-91b2-4b80-9772-549af4f188c2</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\Click\ClickVisibleDomain.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>d04690c2-a599-4182-8217-2369bef732e0</id>
+      <recordtableid>9f02de02-f3c3-4a2c-8c98-923d4e3fa633</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\FillImformationDbcUser.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>11aa6da0-f71c-419e-8333-7c370aca667d</id>
+      <recordtableid>4c3491e4-62e4-4a91-b8fd-53352a957f84</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\FillUserName.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>f9920316-b950-41ee-ba07-bd2c89afb6c4</id>
+      <recordtableid>46ed17a6-0755-46e5-903a-b870e3375231</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\Validation\CheckPropertyDefault.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>60b69892-8629-4d4d-9cb2-6253105fe125</id>
+      <recordtableid>e30f0664-5121-4372-8506-291fdea62ae8</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcUser\Validation\ValidateUpdateNewWalletFail.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>ef98321a-20c6-4fd6-bfcb-215fb475a32e</id>
+      <recordtableid>39a688c7-1b7c-47a8-b7b2-4f3b58e84bbe</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonAdd.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>cd0894b2-2a98-4182-bbbd-639c64283510</id>
+      <recordtableid>41bd713d-621e-4603-9ff0-1df392fc1c66</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonCreateWallet.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>8418952f-fdac-44af-8783-eb2af31cbb53</id>
+      <recordtableid>bd9d1205-e2b7-4231-a815-10a7d843b429</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonDownload.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>34eccdc5-b756-4ec2-a264-9ec66dd27ee5</id>
+      <recordtableid>6d2c0e49-1166-417b-b7e2-16d50846978f</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonGetWalletAddress.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>b2bea525-a012-4139-bbfc-22d0ae63562e</id>
+      <recordtableid>a5937264-ee5e-499c-825b-bdfb8e200885</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Click\ClickButtonUpdate.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>e629d741-f8ba-489e-addf-b1ea7492c739</id>
+      <recordtableid>5d51cc88-a439-4188-af4d-52c981111cc8</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Click\DoubleClickWalletDefault.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>d820e8ce-fe2f-4d21-ab86-dbede262b417</id>
+      <recordtableid>bcfec26b-a557-4d1c-b986-258612e99fc4</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\FillAllTextboxInPanelEditDbcWallet.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>3cfcf366-4e18-439c-a3fb-33c5ee268a06</id>
+      <recordtableid>1bc4bce9-1e3f-4711-bd84-e7ca3ca10733</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\FillName.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>53d633ad-4727-4bc7-836d-3b47f48e0f5b</id>
+      <recordtableid>f9496dce-a2b0-4029-be7f-db9e5d54628f</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\FillWalletName.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>3c3cc33c-ca8e-4534-bf45-fa1b73ec16de</id>
+      <recordtableid>f3247c01-1769-430c-8239-2ac7dda6109b</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\UploadWallet.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>61685985-0184-4a04-9f58-32f34afa2497</id>
+      <recordtableid>dc55002b-5a48-4c1c-a375-c444e152d1ec</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateAddNewDbcWalletFail.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>350fe680-b539-4ede-a591-289c79b27270</id>
+      <recordtableid>1c81e272-3aac-430e-b440-31a22c9a9bbb</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateAddNewWalletPass.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>0f074f65-0970-4625-8475-352f3dd7d835</id>
+      <recordtableid>52bb0dfe-8728-4b76-98eb-060a531d866e</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateCannelEditWalletDefault.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>ff3cba37-c1ad-4a81-908d-e7fd73526f98</id>
+      <recordtableid>cfc784ff-fe47-425b-8ec6-3609e12600e1</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateCreateWalletSuccess.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>4a7a3c33-6b43-4925-a681-f0f1008fa977</id>
+      <recordtableid>23d96640-a8fc-48fc-9004-da0c6213c65f</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateMessageErrorCreateWallet.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>500d384d-f8b6-4445-a153-acb830d32637</id>
+      <recordtableid>08e62fe9-e58c-4ab2-a59d-e3e5ea08366a</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateTextboxWalletAddressNull.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>67e24b4c-4761-4b81-a2f6-f0ad16b8999d</id>
+      <recordtableid>240a4e41-5545-432a-be98-ccc0be6fded0</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUpdateWalletFail.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>2c558cf8-ecf7-4366-9839-ee11acb015eb</id>
+      <recordtableid>d4f5105a-84e7-41e7-b9b2-dc954fb95d18</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUpdateWalletInformationSuccess.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>10bd7428-073b-4b11-b1eb-7da8eb4ae3b4</id>
+      <recordtableid>6f181966-c974-4a04-b7a1-ba3a6e634e7f</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\EditDbcWallet\Validation\ValidateUploadWalletError.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>2b9c997a-0df1-40be-bba4-80f5f12c27a8</id>
+      <recordtableid>eab44624-52d1-4881-a8a6-fa2c1f06d68b</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\GroupEdit\DragAndDropDBCGroup.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>a6271406-2703-443d-8006-b5c742abb65a</id>
+      <recordtableid>fed67d9c-346d-4ae0-afd6-8d8646ef3c12</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\GroupEdit\FillDataGroupEdit.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>f1333cbe-f396-44bb-b006-b555d8085c40</id>
+      <recordtableid>733fb7f5-17e8-40b3-a636-733363e493c6</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\GroupEdit\ValidateGroupIDNotNull.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>3aebb5ad-1446-4889-88a4-133a5f8acaa7</id>
+      <recordtableid>4de0ba58-060a-47f8-b9c6-48af5ecce774</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\GroupEdit\ValidatePropertyDefaultGroupEdit.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>a88404da-7647-4be3-a077-ed4132240114</id>
+      <recordtableid>183a443e-1346-4923-a206-92761f975a0b</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\Login\CancelLogin.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>744230ac-67b6-4f4a-b014-0a4139cd9bb9</id>
+      <recordtableid>3dae08bd-d2cd-4222-9b88-63f46ad4c675</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\Login\LoginFail.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>c717def1-5129-4fb7-809f-e63bbdf6f907</id>
+      <recordtableid>fbf36e18-4a8a-4342-b826-42917ad0e91c</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\Login\LoginFailWalletNull.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>455e607e-02ab-4731-8649-c56babe43882</id>
+      <recordtableid>9a64b417-54d9-45f2-b925-a93426edcb93</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\Login\LoginSuccess.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>6d89e6f6-f451-4fe3-b865-d6a72410a91a</id>
+      <recordtableid>6526a20c-9ffa-4b5e-85c0-3feec9c97884</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\OpenBrowser.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>0aa35003-bcd2-4c68-ae07-40dee2f4eb5a</id>
+      <recordtableid>59512ab7-40de-41ed-ae4d-018c56d80409</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\SignEdit\Click\ClickBtnDone.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>a7a67325-0c16-4f48-a15e-256c9d932f75</id>
+      <recordtableid>4b45a475-1fc8-4bc3-a033-667993844d4e</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\SignEdit\Click\ClickCheckboxContentType.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>c13e62e6-d46a-4e7a-8029-c238b04a7b9e</id>
+      <recordtableid>4d6a6e1b-e576-4558-b5eb-b61326ae312c</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\SignEdit\Click\ClickVisibleDomain.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>0c8180c3-1975-45a6-8032-2eadbe8152d8</id>
+      <recordtableid>68faf54e-8679-404a-aaab-b01fb6e7e02c</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\SignEdit\DragAndDropDBCSign.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>58d3c72a-bb67-4c02-a91f-bc56b23a345f</id>
+      <recordtableid>9d7693ab-1d83-4981-afa5-6f85b10476cf</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\SignEdit\FillSignEdit.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>764198c3-ba10-4b51-a939-e8e079755ef5</id>
+      <recordtableid>3c9287bb-fd97-480b-8b9d-d5930ec50ae2</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\SignEdit\ValidatePropertyDefault.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>8b107072-0532-4147-b000-9ce281e4c465</id>
+      <recordtableid>831bf5f2-c699-4858-b3f3-829eea593fca</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\TabBar\ClickConfirmDeploy.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>066c8c49-5e08-42ed-a4fa-2e249ddb53b6</id>
+      <recordtableid>4181c15a-67f5-40f2-81d1-3e9f87a44d86</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\TabBar\DeployFullMode.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>56400de5-2609-4d33-8f6d-b7a74a6a07cb</id>
+      <recordtableid>79d77400-79f3-4ed3-9a71-8904fbf2628e</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\TabBar\DeployModifiedFlowsMode.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>15c9e4c6-0557-4572-9e3e-f90b56fe2eab</id>
+      <recordtableid>2211e3a5-094d-4d70-b68a-527bfb9f835d</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\TabBar\DeployModifiedNodesMode.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>c02c7940-cf6f-4b22-8da2-7acd599cb47c</id>
+      <recordtableid>838655d7-76c7-4148-b4c9-ac285d7a6dbb</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\TabBar\ValidateDeployFailed.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>146da2d6-766c-419b-874e-b0ad4855bd6a</id>
+      <recordtableid>028f0e3e-6296-4b5d-a494-03500f37a727</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\TabBar\ValidateDeploySuccess.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>28fbd94d-7a5b-4c50-8ebb-4d9dbde38dcb</id>
+      <recordtableid>97ffd677-33b4-481d-ac0a-489096585fad</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\WalletEdit\DragAndDropDBCContract.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>fce366c6-3c9d-475a-a09a-83fd33257f0f</id>
+      <recordtableid>dbe22e1c-81d3-4948-bed6-1cb520bdb8c7</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\WalletEdit\DragAndDropDBCStore.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>b034a7ff-cc99-4ad5-a5e4-f19b1e6409df</id>
+      <recordtableid>38dbb77a-1aa9-458b-beac-d6080e3c0c79</recordtableid>
+    </None>
+    <None Include="DBC3-IDE\WalletEdit\DragAndDropDBCUser.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>1556b304-93f1-4353-996f-798b484eed8e</id>
+      <recordtableid>a6cbba27-0927-418f-b668-4475500d7630</recordtableid>
+    </None>
+    <None Include="DBC3_IDERepository.rximg">
+      <DependentUpon>DBC3_IDERepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>d0f3740d-6f25-4501-8419-02b82149eb60</id>
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+    </None>
+    <None Include="DBC3_IDERepository.rxrep">
+      <id>a575eef3-93ab-4018-af3b-bfc00f70e3c3</id>
+      <repoid>945daf6a-f1a8-41f5-a978-e39f84366797</repoid>
+      <reporootid>fb62b673-52da-4865-a253-e2a4eb8014f7</reporootid>
+    </None>
+    <None Include="DNCWareNetwork\Click\ClickDomainLink.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>5e49b622-e532-4b45-9961-6e92206012a4</id>
+      <recordtableid>f852a249-8e26-4c20-8649-c8297a0b7cd9</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Click\ClickDomainName.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>5e44fbd7-d24c-457e-a3bf-e9928b196678</id>
+      <recordtableid>ec9e96ee-e5cf-439a-b732-db9ef7d3c92f</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Click\ClickGroupsLink.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>e7083c15-4325-400e-8ee5-b0644edea3ab</id>
+      <recordtableid>d04ef553-08e3-4d8a-9173-929a4ef9411c</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Click\ClickNewTransaction.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>92f01ebc-a7a9-4b61-9cbf-8141723736e1</id>
+      <recordtableid>8d6efea1-6891-4145-8497-e7c71e749190</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Click\ClickUserNameFromUsersList.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>df3e6c4c-09e9-45e1-ae40-7ed7a1ba99a6</id>
+      <recordtableid>092ea9c3-d83d-4459-a630-f45a75cdb16b</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Click\ClickUsersLink.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>7eeb2eb9-a37e-4f8c-ae7f-25ec88f011af</id>
+      <recordtableid>c5061138-e901-4bb3-9dc9-96c87b09206a</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Click\ClickViewInitCodeDomain.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>d75fd8f4-3884-4b03-8420-d7ef1b577df8</id>
+      <recordtableid>6eb8dda0-f63c-4be6-af3d-841fe1f242e6</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\CloseBrowser.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>8181b0da-a881-429a-845b-dc8d63e438d3</id>
+      <recordtableid>d81e7b39-88cb-4145-9dbb-78dca9498241</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\CreateNewDomain.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>2e6d6551-8cc9-4294-9702-a72dd583cccd</id>
+      <recordtableid>67b4c209-1000-4bf6-9201-43579809885c</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\CreateNewTransactionC1Create.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>2ee86795-fd35-403f-a244-bc867c5a7634</id>
+      <recordtableid>a7551f9d-ec35-44e4-a971-389975734797</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\DeleteFromC1terminate.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>1bf5967d-f0c4-413b-9216-5ea782cd475c</id>
+      <recordtableid>0fc1128f-ca61-417c-a59f-6185e70c9c18</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\GetNewWalletAddress.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>7175647a-3f96-48ca-ba5f-3304321c4a04</id>
+      <recordtableid>b064eb2c-02fa-40bd-b745-1d4a3ca6b384</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\GroupList\ValidateNameGroupEmpty.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>d5700ae0-f631-4f5a-b378-db48d31fb92d</id>
+      <recordtableid>d1ed9b50-6a30-4edd-9e4c-2a3c4836100c</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Login.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>507d62b1-eda3-4f5d-a396-978e26b2a658</id>
+      <recordtableid>bdaaa0ec-68f9-4264-93b6-15423e6375d6</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\OpenBrowser.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>d2bce5bb-7fa0-4384-8a07-93c43664516d</id>
+      <recordtableid>706ebfd8-a9bc-4fcc-8555-721476aab83f</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\Search.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>9913312e-3c95-429b-b7c6-08e5868eb53a</id>
+      <recordtableid>52656ca7-d66e-4071-a4fd-2a8930c4d153</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\SetWalletForNewUser.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>85d56967-2174-4e26-876b-b04f2ace2049</id>
+      <recordtableid>939a5c2e-30ea-49dd-8a4d-76b9d4fdb610</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\ValidateDisclosedTo.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>0b2459cb-e4c0-468f-a6f5-cee90119a22b</id>
+      <recordtableid>286132f0-f2f4-46d2-8de2-8c28f910ca72</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\ValidateDomainCodeDeploy.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>bea074bf-bc1c-4c57-a778-4436eb5d1ec9</id>
+      <recordtableid>7c2f634b-1775-4abd-ad5d-eb90e1d8b31c</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\ValidateDomainCodeDeployempty.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>b700dc88-bdf3-4ac0-9536-013e60d56110</id>
+      <recordtableid>161dc0f9-fe16-4ec5-9439-2db8dfa4ef28</recordtableid>
+    </None>
+    <None Include="DNCWareNetwork\ValidateIDUserNotNull.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>19f0c6d0-caab-439a-9745-782b2c9b7219</id>
+      <recordtableid>ad7359bc-6ed3-4e97-96e5-cb81cdb9fe52</recordtableid>
+    </None>
+    <None Include="Recording1.rxrec">
+      <BoundTo>a575eef3-93ab-4018-af3b-bfc00f70e3c3</BoundTo>
+      <id>afb212f7-b966-4d37-8be8-2285436f3bd1</id>
+      <recordtableid>7b1888b6-c432-49d4-9dbd-7411fafcce98</recordtableid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBC3_IDE.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>9136d9c9-fa73-451c-b003-2b68df9d1b7f</id>
+    </Content>
+    <Content Include="DBC3_IDE_Login.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>82716fbe-40c9-4a03-98c2-340a187a21b4</id>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DBC3-IDE">
+      <id>80244259-0259-4afb-a8ef-1d7e3e1f3b08</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\DomainCode">
+      <id>f96eed87-fca7-4e01-87bf-c511767aaf74</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\EditDbcUser">
+      <id>07b5888c-41b8-4f15-826e-c0345d4c0e4b</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\EditDbcUser\Click">
+      <id>44d6550f-3cdc-4cc0-b923-c97189d255bf</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\EditDbcUser\Validation">
+      <id>a6fd712c-2b4d-468a-aa76-950da5a9ec2c</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\EditDbcWallet">
+      <id>4f435889-39a5-4f33-b5f1-89abc13ec90b</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\EditDbcWallet\Click">
+      <id>755cffef-02d1-4841-8793-697114140df5</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\EditDbcWallet\Validation">
+      <id>a93848d1-28a9-428f-8f60-3673ab9ec2ed</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\Login">
+      <id>4b87a644-3f0d-48d8-994a-cc1453a328bd</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\CommonRecording">
+      <id>e0f55ec9-acf0-4b57-b71b-9562c00bcc85</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\GroupEdit">
+      <id>befd0019-3063-4762-ada4-354905dde8c6</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\SignEdit">
+      <id>eaff4b41-5a32-4521-9c71-03ea54ce599a</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\SignEdit\Click">
+      <id>37a94a26-6e03-4208-b336-10063d073d00</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\TabBar">
+      <id>ca2835ae-3d87-45c8-865d-43b40942710b</id>
+    </Folder>
+    <Folder Include="DBC3-IDE\WalletEdit">
+      <id>f357ad18-8bef-4301-8923-b0ab61487569</id>
+    </Folder>
+    <Folder Include="DNCWareNetwork">
+      <id>b550e6bc-03cb-489b-b234-0aef97ea7fac</id>
+    </Folder>
+    <Folder Include="DNCWareNetwork\Click">
+      <id>1db20dba-67ac-4991-b20b-fd34ea7ca317</id>
+    </Folder>
+    <Folder Include="DNCWareNetwork\GroupList">
+      <id>9812be03-a264-4f7c-a713-09ce1abc55e0</id>
+    </Folder>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(RanorexTargetsPath)" Condition="Exists('$(RanorexTargetsPath)')" />
+</Project>

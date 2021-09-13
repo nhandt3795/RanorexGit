@@ -1,0 +1,26 @@
+﻿<Properties>
+  <Array name="active" />
+  <ActiveConfiguration value="Debug" />
+  <ActivePlatform value="x86" />
+  <Array name="bookmarks" />
+  <Array name="files" />
+  <SerializedValue name="ModuleBrowserState">
+    <ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <string>{0AF97247-4181-4DF3-AF0A-CEA394CEC2EF}</string>
+      <string>60513a05-eab7-41e7-8c10-e51c735edc2e</string>
+      <string>80244259-0259-4afb-a8ef-1d7e3e1f3b08</string>
+      <string>e0f55ec9-acf0-4b57-b71b-9562c00bcc85</string>
+      <string>befd0019-3063-4762-ada4-354905dde8c6</string>
+      <string>4b87a644-3f0d-48d8-994a-cc1453a328bd</string>
+      <string>eaff4b41-5a32-4521-9c71-03ea54ce599a</string>
+      <string>37a94a26-6e03-4208-b336-10063d073d00</string>
+      <string>ca2835ae-3d87-45c8-865d-43b40942710b</string>
+      <string>f357ad18-8bef-4301-8923-b0ab61487569</string>
+      <string>b550e6bc-03cb-489b-b234-0aef97ea7fac</string>
+      <string>1db20dba-67ac-4991-b20b-fd34ea7ca317</string>
+      <string>9812be03-a264-4f7c-a713-09ce1abc55e0</string>
+    </ArrayOfString>
+  </SerializedValue>
+  <ProjectBrowserState value="[Solution DBC3-IDE[DBC3-IDE[]]]&#xD;&#xA;Solution DBC3-IDE\DBC3-IDE\DBC3_IDE_GroupEdit.rxtst&#xD;&#xA;Solution DBC3-IDE" />
+  <StartupProject value="{0AF97247-4181-4DF3-AF0A-CEA394CEC2EF}" />
+</Properties>
