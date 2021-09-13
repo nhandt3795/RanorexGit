@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="14.53s"
+		durationms="14530"
+		type="root"
+		rid="b7cd6c35957f0cc"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="9/5/2021 5:36:17 PM"
+		timestampiso="2021-09-05T10:36:17"
+		endtime="9/5/2021 5:36:32 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateDomainCodeUpdated">
+		<detail>
+			ValidateDomainCodeUpdated
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.025"
+			timeRelativeToTestModuleStartTime="00:09.025"
+			timeWallClock="17:36:26"
+			time="00:09.025"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>DomainCode
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.043"
+			timeRelativeToTestModuleStartTime="00:09.043"
+			timeWallClock="17:36:26"
+			time="00:09.043"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText=$DomainCode) on item 'DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]"
+				itempath=".//span[@class='ace_constant ace_numeric'][1]"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction"
+				id="3174fd71a9ec4f2eaeda746bffae5818"
+				timeout="40000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:13.930"
+			timeRelativeToTestModuleStartTime="00:13.930"
+			timeWallClock="17:36:31"
+			time="00:13.930"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13896)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.520"
+			timeRelativeToTestModuleStartTime="00:14.520"
+			timeWallClock="17:36:31"
+			time="00:14.520"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'InnerText' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@class='ace_constant ace_numeric'][1]"
+				itempath=".//span[@class='ace_constant ace_numeric'][1]"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.EditDbcDomain.TextLineOneInFunction"
+				id="3174fd71a9ec4f2eaeda746bffae5818"
+				timeout="40000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainCodeUpdated.cs"
+				codeline="96"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

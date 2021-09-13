@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="5.12s"
+		durationms="5116"
+		type="root"
+		rid="60f3e71771275b7"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/22/2021 7:23:32 PM"
+		timestampiso="2021-08-22T12:23:32"
+		endtime="8/22/2021 7:23:37 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Search">
+		<detail>
+			Search
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.190"
+			timeRelativeToTestModuleStartTime="00:03.190"
+			timeWallClock="19:23:36"
+			time="00:03.190"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>SearchValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.206"
+			timeRelativeToTestModuleStartTime="00:03.206"
+			timeWallClock="19:23:36"
+			time="00:03.206"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute Value to '$SearchValue' on item 'DNCWAREBlockChain3.HomePage.SearchText'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//div[@name='search']//input[@type='text'][1]"
+				itempath=".//div[@name='search']//input[@type='text'][1]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.HomePage.SearchText"
+				id="fa4f21d3f8fc474e9fc9a1ddd1018826"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\Search.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.063"
+			timeRelativeToTestModuleStartTime="00:04.063"
+			timeWallClock="19:23:36"
+			time="00:04.063"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 11840)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.301"
+			timeRelativeToTestModuleStartTime="00:04.301"
+			timeWallClock="19:23:37"
+			time="00:04.301"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DNCWAREBlockChain3.HomePage.SearchButton' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//div[@name='search']//button[@class='btn btn-default'][1]"
+				itempath=".//div[@name='search']//button[@class='btn btn-default'][1]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.HomePage.SearchButton"
+				id="7e4d8c73681042fa8b8e8d58f982bc78"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\Search.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

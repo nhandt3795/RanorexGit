@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="26.47s"
+		durationms="26474"
+		type="root"
+		rid="33a7654920c733b0"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="9/11/2021 7:29:17 PM"
+		timestampiso="2021-09-11T12:29:17"
+		endtime="9/11/2021 7:29:43 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateNameGroupEmpty">
+		<detail>
+			ValidateNameGroupEmpty
+		</detail>
+		<errormessage>
+			Attribute 'InnerText' of element for item 'DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1' does not match the specified value (actual='g67911875', expected='').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.623"
+			timeRelativeToTestModuleStartTime="00:11.623"
+			timeWallClock="19:29:28"
+			time="00:11.623"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>IdReturn, DomainDNCWARE
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.224"
+			timeRelativeToTestModuleStartTime="00:22.224"
+			timeWallClock="19:29:39"
+			time="00:22.224"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 22052)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.673"
+			timeRelativeToTestModuleStartTime="00:22.673"
+			timeWallClock="19:29:39"
+			time="00:22.673"
+			level="Info"
+			category="Validation"
+			errimg="images_Validate_28a1d018\Validate_28a1d018_e1d13457_trace.jpg"
+			errthumb="images_Validate_28a1d018\Validate_28a1d018_e1d13457_trace_thumb.jpg">
+			<message>
+				Validating AttributeEqual (InnerText=$IdReturn) on item 'DNCWAREBlockChain3.GroupList.IDGroupLine1'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//table[@class='table table-striped']//tr[1]//td[2][1]"
+				itempath=".//table[@class='table table-striped']//tr[1]//td[2][1]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1"
+				id="16bb505d7e9b425fa0e56bcdcc0fe364"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\GroupList\ValidateNameGroupEmpty.cs"
+				codeline="111"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:26.197"
+			timeRelativeToTestModuleStartTime="00:26.197"
+			timeWallClock="19:29:43"
+			time="00:26.197"
+			level="Failure"
+			category="Validation"
+			errimg="images_Validate_28a1d018\Validate_28a1d018_58f2b3af_trace.jpg"
+			errthumb="images_Validate_28a1d018\Validate_28a1d018_58f2b3af_trace_thumb.jpg">
+			<message>
+				Attribute 'InnerText' of element for item 'DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1' does not match the specified value (actual='g67911875', expected='').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//table[@class='table table-striped']//tr[1]//td[2][1]"
+				itempath=".//table[@class='table table-striped']//tr[1]//td[2][1]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1"
+				id="16bb505d7e9b425fa0e56bcdcc0fe364"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\GroupList\ValidateNameGroupEmpty.cs"
+				codeline="112"
+				loglvl="Failure"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:26.401"
+			timeRelativeToTestModuleStartTime="00:26.401"
+			timeWallClock="19:29:43"
+			time="00:26.401"
+			level="Error"
+			category="Module"
+			errimg="images_Validate_28a1d018\Validate_28a1d018_58f2b3af_trace.jpg"
+			errthumb="images_Validate_28a1d018\Validate_28a1d018_58f2b3af_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'InnerText' of element for item 'DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1' does not match the specified value (actual='g67911875', expected='').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Boolean exceptionOnFail)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at DBC3_IDE.DNCWAREBlockChain3.GroupList.ValidateNameGroupEmpty.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\GroupList\ValidateNameGroupEmpty.cs:line 112
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\GroupList\ValidateNameGroupEmpty.cs"
+				codeline="112"
+				type="repoitem"
+				path="/dom[@domain='localhost:8000']//table[@class='table table-striped']//tr[1]//td[2][1]"
+				itempath=".//table[@class='table table-striped']//tr[1]//td[2][1]"
+				fullname="DBC3_IDERepository.DNCWAREBlockChain3.GroupList.IDGroupLine1"
+				id="16bb505d7e9b425fa0e56bcdcc0fe364"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

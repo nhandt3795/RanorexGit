@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.1m"
+		durationms="65339"
+		type="root"
+		rid="eafc3d854f6b8ea"
+		totalerrorcount="1"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/18/2021 9:38:52 AM"
+		timestampiso="2021-08-18T02:38:52"
+		endtime="8/18/2021 9:39:57 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<errormessage>
+			Failed to find item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.585"
+			timeRelativeToTestModuleStartTime="00:04.585"
+			timeWallClock="09:38:56"
+			time="00:04.585"
+			level="Info"
+			category="Mouse"
+			errimg="images_Recordin_9b2d3b8d\Recordin_9b2d3b8d_3d40cdaf_trace.jpg"
+			errthumb="images_Recordin_9b2d3b8d\Recordin_9b2d3b8d_3d40cdaf_trace_thumb.jpg">
+			<message>
+				Mouse Left Down item 'DBC3_IDE_DOMAIN.DomainCode.dbc_contract' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@innertext='dbc contract']"
+				itempath=".//div[@innertext='dbc contract']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract"
+				id="67693ea6ede84de9bcc25ab5f63e7064"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.391"
+			timeRelativeToTestModuleStartTime="00:05.391"
+			timeWallClock="09:38:57"
+			time="00:05.391"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Recordin_9b2d3b8d\Recordin_9b2d3b8d_5d574889_trace.jpg"
+			errthumb="images_Recordin_9b2d3b8d\Recordin_9b2d3b8d_5d574889_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13280)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="83"
+				loglvl="Warn"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="01:04.832"
+			timeRelativeToTestModuleStartTime="01:04.832"
+			timeWallClock="09:39:57"
+			time="01:04.832"
+			level="Error"
+			category="Module"
+			errimg="images_Recordin_9b2d3b8d\Recordin_9b2d3b8d_2b16b837_trace.jpg"
+			errthumb="images_Recordin_9b2d3b8d\Recordin_9b2d3b8d_2b16b837_trace_thumb.jpg">
+			<message>
+				Failed to find item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract'.<br/>No element found for path '/dom[@domain='localhost:1880']//div[@innertext='dbc contract']' at step 'dom[@domain='localhost:1880']' after 316 attempts within 1m.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Repository.RepoItemInfo.FindInternal[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.&lt;>c__DisplayClass81_0`1.&lt;Find>b__0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleElementNotFound[T](Func`1 action, RepoItemInfo entry)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.Find[T](Boolean findSingle, Boolean throwException, Duration effectiveTimeoutOverride)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException, Duration waitTimeout)&#13;&#10;   at Ranorex.Core.Repository.RepoItemInfo.CreateAdapter[T](Boolean throwException)&#13;&#10;   at DBC3_IDE.DBC3_IDERepositoryFolders.DomainCodeFolder.get_dbc_contract() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3_IDERepository.cs:line 534&#13;&#10;   at DBC3_IDE.DomainCode.Recording1.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs:line 83&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="83"
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@innertext='dbc contract']"
+				itempath=".//div[@innertext='dbc contract']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.DomainCode.dbc_contract"
+				id="67693ea6ede84de9bcc25ab5f63e7064"
+				timeout="60000"
+				failedStep="dom[@domain='localhost:1880']"
+				bestPathPrefix=""
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,16 @@
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.rxsqc
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE.rxtmg
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.exe.config
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.xml
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.exe
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.pdb
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\Ranorex.Core.Resolver.dll
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\obj\Debug\DBC3-IDE.csprojResolveAssemblyReference.cache
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\obj\Debug\DBC3-IDE.exe
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\obj\Debug\DBC3-IDE.pdb
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE_DomainCode.rxtst
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE_Login.rxtst
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE_WalletEdit.rxtst
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE_UserEdit.rxtst
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE_SignEdit.rxtst
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE_GroupEdit.rxtst

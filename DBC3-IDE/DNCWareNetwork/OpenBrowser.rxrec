@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="706ebfd8-a9bc-4fcc-8555-721476aab83f"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="OpenBrowser"
+	namespace="DBC3_IDE.DNCWareNetwork">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<openwebsiterecorditem
+		args=""
+		browser="chrome"
+		clearcache="False"
+		clearcodecache="False"
+		clearcookies="False"
+		clearserviceworker="False"
+		enabled="True"
+		incognito="False"
+		instrument="True"
+		killexisting="False"
+		maximized="False"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<url>
+				http://localhost:8000/
+			</url>
+		</openwebsiterecorditem>
+	</recorditems>
+	<repository
+	id="945daf6a-f1a8-41f5-a978-e39f84366797"
+	name="DBC3_IDERepository"
+	relativepath="..\DBC3_IDERepository.rxrep">
+		<codegen
+		classname="DBC3_IDERepository"
+		namespace="DBC3_IDE">
+		</codegen>
+		<rootfolder
+		id="fb62b673-52da-4865-a253-e2a4eb8014f7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		OpenBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="19.65s"
+		durationms="19654"
+		type="root"
+		rid="7ffd4a6f97b27f9"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/27/2021 4:26:40 PM"
+		timestampiso="2021-08-27T09:26:40"
+		endtime="8/27/2021 4:27:00 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="CheckPropertyDefault">
+		<detail>
+			CheckPropertyDefault
+		</detail>
+		<errormessage>
+			Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID' does not match the specified value (actual='u80103298', expected='').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.499"
+			timeRelativeToTestModuleStartTime="00:10.499"
+			timeWallClock="16:26:50"
+			time="00:10.499"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewVariable
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.514"
+			timeRelativeToTestModuleStartTime="00:10.514"
+			timeWallClock="16:26:50"
+			time="00:10.514"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (TagValue='(null)') on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-name']"
+				itempath=".//input[@id='node-input-name']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName"
+				id="8a3b903c7c9e4da0827a7882d0906c4d"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.479"
+			timeRelativeToTestModuleStartTime="00:15.479"
+			timeWallClock="16:26:55"
+			time="00:15.479"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 19908)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.810"
+			timeRelativeToTestModuleStartTime="00:15.810"
+			timeWallClock="16:26:56"
+			time="00:15.810"
+			level="Success"
+			category="Validation"
+			errimg="images_CheckPro_1376f5f4\CheckPro_1376f5f4_3a836dbe_trace.jpg"
+			errthumb="images_CheckPro_1376f5f4\CheckPro_1376f5f4_3a836dbe_trace_thumb.jpg">
+			<message>
+				Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-name']"
+				itempath=".//input[@id='node-input-name']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName"
+				id="8a3b903c7c9e4da0827a7882d0906c4d"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="96"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:15.814"
+			timeRelativeToTestModuleStartTime="00:15.814"
+			timeWallClock="16:26:56"
+			time="00:15.814"
+			level="Info"
+			category="Validation"
+			errimg="images_CheckPro_1376f5f4\CheckPro_1376f5f4_3a836dbe_trace.jpg"
+			errthumb="images_CheckPro_1376f5f4\CheckPro_1376f5f4_3a836dbe_trace_thumb.jpg">
+			<message>
+				Validating AttributeEqual (TagValue=$NewVariable) on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-dbcId']"
+				itempath=".//input[@id='node-input-dbcId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID"
+				id="2d3138fe967a4c7cb51d70cf3d7a6f71"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.376"
+			timeRelativeToTestModuleStartTime="00:19.376"
+			timeWallClock="16:26:59"
+			time="00:19.376"
+			level="Failure"
+			category="Validation"
+			errimg="images_CheckPro_1376f5f4\CheckPro_1376f5f4_40361fa4_trace.jpg"
+			errthumb="images_CheckPro_1376f5f4\CheckPro_1376f5f4_40361fa4_trace_thumb.jpg">
+			<message>
+				Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID' does not match the specified value (actual='u80103298', expected='').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-dbcId']"
+				itempath=".//input[@id='node-input-dbcId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID"
+				id="2d3138fe967a4c7cb51d70cf3d7a6f71"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="100"
+				loglvl="Failure"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.561"
+			timeRelativeToTestModuleStartTime="00:19.561"
+			timeWallClock="16:27:00"
+			time="00:19.561"
+			level="Error"
+			category="Module"
+			errimg="images_CheckPro_1376f5f4\CheckPro_1376f5f4_f556b2ba_trace.jpg"
+			errthumb="images_CheckPro_1376f5f4\CheckPro_1376f5f4_f556b2ba_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID' does not match the specified value (actual='u80103298', expected='').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Boolean exceptionOnFail)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at DBC3_IDE.DBC3_IDE.WalletEdit.EditDbcUser.CheckPropertyDefault.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs:line 100
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="100"
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-dbcId']"
+				itempath=".//input[@id='node-input-dbcId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID"
+				id="2d3138fe967a4c7cb51d70cf3d7a6f71"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

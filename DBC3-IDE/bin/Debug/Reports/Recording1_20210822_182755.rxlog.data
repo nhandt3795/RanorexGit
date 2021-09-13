@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="5.39s"
+		durationms="5385"
+		type="root"
+		rid="b64953ac83f2cc"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/22/2021 6:27:58 PM"
+		timestampiso="2021-08-22T11:27:58"
+		endtime="8/22/2021 6:28:03 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.231"
+			timeRelativeToTestModuleStartTime="00:03.231"
+			timeWallClock="18:28:01"
+			time="00:03.231"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewVariable, sandboxValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.246"
+			timeRelativeToTestModuleStartTime="00:03.246"
+			timeWallClock="18:28:01"
+			time="00:03.246"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (TagValue='d21024301') on item 'DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				itempath=".//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Recording1.cs"
+				codeline="108"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.100"
+			timeRelativeToTestModuleStartTime="00:05.100"
+			timeWallClock="18:28:03"
+			time="00:05.100"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 11840)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.381"
+			timeRelativeToTestModuleStartTime="00:05.381"
+			timeWallClock="18:28:03"
+			time="00:05.381"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				itempath=".//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Recording1.cs"
+				codeline="109"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

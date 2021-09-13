@@ -1,0 +1,10 @@
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE.rxtmg
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3_IDE.rxtst
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.exe.config
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.xml
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.exe
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\DBC3-IDE.pdb
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\bin\Debug\Ranorex.Core.Resolver.dll
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\obj\x86\Debug\DBC3-IDE.csprojResolveAssemblyReference.cache
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\obj\x86\Debug\DBC3-IDE.exe
+D:\ScriptAutomation\DBC3-IDE\DBC3-IDE\obj\x86\Debug\DBC3-IDE.pdb

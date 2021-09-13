@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="1.43s"
+		durationms="1433"
+		type="root"
+		rid="c213bebab2795b8"
+		totalerrorcount="1"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/19/2021 7:59:39 PM"
+		timestampiso="2021-08-19T12:59:39"
+		endtime="8/19/2021 7:59:41 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.428"
+			timeRelativeToTestModuleStartTime="00:01.428"
+			timeWallClock="19:59:40"
+			time="00:01.428"
+			level="Error"
+			category="Module">
+			<message>
+				The test run has been aborted by the user.
+			</message>
+			<metainfo
+				loglvl="Error">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:01.571"
+			timeRelativeToTestModuleStartTime="00:01.571"
+			timeWallClock="19:59:41"
+			time="00:01.571"
+			level="Failure"
+			category="Module"
+			errimg="images_Login_20_16f282f8\Login_20_16f282f8_f2acaad2_trace.jpg"
+			errthumb="images_Login_20_16f282f8\Login_20_16f282f8_f2acaad2_trace_thumb.jpg">
+			<message>
+				Thread was being aborted.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.License.LicenseHelper.AcquireLicense(LicenseManagerInfo serverInfo, ProductRequirements productReqs, AcquireLicenseStatus&amp; status, String&amp; reply)&#13;&#10;   at Ranorex.Core.ElementEngine.CheckFloatingLicense(Boolean verbose, LicenseManagerInfo lsi)&#13;&#10;   at Ranorex.Core.ElementEngine.CheckLicense(Boolean verbose)&#13;&#10;   at Ranorex.Core.ElementEngine.AssertLicense()&#13;&#10;   at Ranorex.Core.ElementEngine..ctor()&#13;&#10;   at Ranorex.Core.ElementEngine.get_Instance()&#13;&#10;   at Ranorex.Core.Testing.TestModuleRunner.RunStandalone(ITestModule module, String reportFilename, Boolean generateReport, String standaloneModuleName, CaseInsensitiveString guid)"
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>

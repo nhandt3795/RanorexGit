@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="6.36s"
+		durationms="6363"
+		type="root"
+		rid="2a0acb2a2da67c"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/16/2021 11:54:08 AM"
+		timestampiso="2021-08-16T04:54:08"
+		endtime="8/16/2021 11:54:15 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ImportWallet">
+		<detail>
+			ImportWallet
+		</detail>
+		<errormessage>
+			Setting attribute 'Custom' failed on element '{ToolBar:1001}'.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.320"
+			timeRelativeToTestModuleStartTime="00:03.320"
+			timeWallClock="11:54:12"
+			time="00:03.320"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewVariable
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.336"
+			timeRelativeToTestModuleStartTime="00:03.336"
+			timeWallClock="11:54:12"
+			time="00:03.336"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DBC3_IDE_DOMAIN.Login.ButtonWallet' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-dialog-login-wallet']"
+				itempath=".//input[@id='node-dialog-login-wallet']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Login.ButtonWallet"
+				id="e3ba113ddb8149e4a16f691321cf7ac4"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Login\ImportWallet.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.423"
+			timeRelativeToTestModuleStartTime="00:04.423"
+			timeWallClock="11:54:13"
+			time="00:04.423"
+			level="Warn"
+			category="WinForms"
+			errimg="images_ImportWa_f1be45b3\ImportWa_f1be45b3_524346cb_trace.jpg"
+			errthumb="images_ImportWa_f1be45b3\ImportWa_f1be45b3_524346cb_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 11056)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.402"
+			timeRelativeToTestModuleStartTime="00:05.402"
+			timeWallClock="11:54:14"
+			time="00:05.402"
+			level="Info"
+			category="Set value"
+			errimg="images_ImportWa_f1be45b3\ImportWa_f1be45b3_abd46596_trace.jpg"
+			errthumb="images_ImportWa_f1be45b3\ImportWa_f1be45b3_abd46596_trace_thumb.jpg">
+			<message>
+				Setting attribute Custom to '$NewVariable' on item 'DialogWindow.ToolBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Open']/element[@class='WorkerW']/?/?/element[@controlid='41477']//toolbar[@controlid='1001']"
+				itempath="element[@class='WorkerW']/?/?/element[@controlid='41477']//toolbar[@controlid='1001']"
+				fullname="DBC3_IDERepository.DialogWindow.ToolBar"
+				id="15ea0b568e8a4e36ae7772602b2c569d"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Login\ImportWallet.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.267"
+			timeRelativeToTestModuleStartTime="00:06.267"
+			timeWallClock="11:54:15"
+			time="00:06.267"
+			level="Error"
+			category="Module"
+			errimg="images_ImportWa_f1be45b3\ImportWa_f1be45b3_ed8cbdfc_trace.jpg"
+			errthumb="images_ImportWa_f1be45b3\ImportWa_f1be45b3_ed8cbdfc_trace_thumb.jpg">
+			<message>
+				Setting attribute 'Custom' failed on element '{ToolBar:1001}'.<br/>The operation is not supported.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Core.Element.SetAttributeValue(String name, Object value)
+   at Ranorex.Core.Element.SetAttributeValue(String name, String value)
+   at DBC3_IDE.Login.ImportWallet.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Login\ImportWallet.cs:line 100
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Login\ImportWallet.cs"
+				codeline="100"
+				loglvl="Error"
+				itemindex="1">
+			</metainfo>
+		</item>
+	</activity>
+</report>

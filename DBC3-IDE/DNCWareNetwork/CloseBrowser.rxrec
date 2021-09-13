@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="d81e7b39-88cb-4145-9dbb-78dca9498241"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseBrowser"
+	namespace="DBC3_IDE.DNCWareNetwork">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="0ms"
+		method="CloseWindow"
+		optional="False"
+		searchpropertyid="95d15ceb-b99f-49ae-ab91-ac30ffd507e2">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="718ad50a-cd96-4614-b574-dc14493e8937"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:8000']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="945daf6a-f1a8-41f5-a978-e39f84366797"
+	name="DBC3_IDERepository"
+	relativepath="..\DBC3_IDERepository.rxrep">
+		<codegen
+		classname="DBC3_IDERepository"
+		namespace="DBC3_IDE">
+		</codegen>
+		<rootfolder
+		id="fb62b673-52da-4865-a253-e2a4eb8014f7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseBrowser.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

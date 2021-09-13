@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="5.77s"
+		durationms="5774"
+		type="root"
+		rid="729561c1d9f6afc"
+		totalerrorcount="0"
+		totalwarningcount="0"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/17/2021 2:37:24 AM"
+		timestampiso="2021-08-16T19:37:24"
+		endtime="8/17/2021 2:37:30 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion="">
+		<detail>
+			Ranorex Testscript
+		</detail>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.756"
+			timeRelativeToTestModuleStartTime="00:05.756"
+			timeWallClock="02:37:30"
+			time="00:05.756"
+			level="Failure"
+			category="Licensing">
+			<message>
+				The License Manager '10.116.41.85' could not be contacted. Please check your network connection and make sure the Ranorex License Manager is running.
+			</message>
+			<metainfo
+				loglvl="Failure">
+			</metainfo>
+		</item>
+	</activity>
+</report>
