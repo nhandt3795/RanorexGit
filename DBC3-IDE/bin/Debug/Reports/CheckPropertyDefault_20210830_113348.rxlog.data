@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="22.87s"
+		durationms="22873"
+		type="root"
+		rid="327bea659258c29d"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="8/30/2021 11:33:52 AM"
+		timestampiso="2021-08-30T04:33:52"
+		endtime="8/30/2021 11:34:15 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="CheckPropertyDefault">
+		<detail>
+			CheckPropertyDefault
+		</detail>
+		<errormessage>
+			Attribute 'Checked' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.CheckboxDisclosedToAll' does not match the specified value (actual='True', expected='true').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.011"
+			timeRelativeToTestModuleStartTime="00:10.011"
+			timeWallClock="11:34:02"
+			time="00:10.011"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewVariable
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.034"
+			timeRelativeToTestModuleStartTime="00:10.034"
+			timeWallClock="11:34:02"
+			time="00:10.034"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (TagValue='(null)') on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-name']"
+				itempath=".//input[@id='node-input-name']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName"
+				id="8a3b903c7c9e4da0827a7882d0906c4d"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.413"
+			timeRelativeToTestModuleStartTime="00:18.413"
+			timeWallClock="11:34:11"
+			time="00:18.413"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 19620)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.756"
+			timeRelativeToTestModuleStartTime="00:18.756"
+			timeWallClock="11:34:11"
+			time="00:18.756"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-name']"
+				itempath=".//input[@id='node-input-name']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName"
+				id="8a3b903c7c9e4da0827a7882d0906c4d"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="96"
+				loglvl="Success"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.758"
+			timeRelativeToTestModuleStartTime="00:18.758"
+			timeWallClock="11:34:11"
+			time="00:18.758"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (TagValue='(null)') on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-dbcId']"
+				itempath=".//input[@id='node-input-dbcId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID"
+				id="2d3138fe967a4c7cb51d70cf3d7a6f71"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.034"
+			timeRelativeToTestModuleStartTime="00:19.034"
+			timeWallClock="11:34:11"
+			time="00:19.034"
+			level="Success"
+			category="Validation"
+			errimg="images_CheckPro_edc5c63d\CheckPro_edc5c63d_a1c77da3_trace.jpg"
+			errthumb="images_CheckPro_edc5c63d\CheckPro_edc5c63d_a1c77da3_trace_thumb.jpg">
+			<message>
+				Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-dbcId']"
+				itempath=".//input[@id='node-input-dbcId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserID"
+				id="2d3138fe967a4c7cb51d70cf3d7a6f71"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="100"
+				loglvl="Success"
+				itemindex="1">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.034"
+			timeRelativeToTestModuleStartTime="00:19.034"
+			timeWallClock="11:34:11"
+			time="00:19.034"
+			level="Info"
+			category="Validation"
+			errimg="images_CheckPro_edc5c63d\CheckPro_edc5c63d_a1c77da3_trace.jpg"
+			errthumb="images_CheckPro_edc5c63d\CheckPro_edc5c63d_a1c77da3_trace_thumb.jpg">
+			<message>
+				Validating AttributeEqual (Checked='true') on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.CheckboxDisclosedToAll'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-disclosedToAll']"
+				itempath=".//input[@id='node-input-disclosedToAll']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.CheckboxDisclosedToAll"
+				id="63db4a35caa34e949f942d0915d6b420"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="103"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.542"
+			timeRelativeToTestModuleStartTime="00:22.542"
+			timeWallClock="11:34:15"
+			time="00:22.542"
+			level="Failure"
+			category="Validation"
+			errimg="images_CheckPro_edc5c63d\CheckPro_edc5c63d_7466416c_trace.jpg"
+			errthumb="images_CheckPro_edc5c63d\CheckPro_edc5c63d_7466416c_trace_thumb.jpg">
+			<message>
+				Attribute 'Checked' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.CheckboxDisclosedToAll' does not match the specified value (actual='True', expected='true').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-disclosedToAll']"
+				itempath=".//input[@id='node-input-disclosedToAll']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.CheckboxDisclosedToAll"
+				id="63db4a35caa34e949f942d0915d6b420"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="104"
+				loglvl="Failure"
+				itemindex="2">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:22.726"
+			timeRelativeToTestModuleStartTime="00:22.726"
+			timeWallClock="11:34:15"
+			time="00:22.726"
+			level="Error"
+			category="Module"
+			errimg="images_CheckPro_edc5c63d\CheckPro_edc5c63d_7466416c_trace.jpg"
+			errthumb="images_CheckPro_edc5c63d\CheckPro_edc5c63d_7466416c_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'Checked' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.CheckboxDisclosedToAll' does not match the specified value (actual='True', expected='true').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Boolean exceptionOnFail)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at DBC3_IDE.DBC3_IDE.WalletEdit.EditDbcUser.CheckPropertyDefault.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs:line 104
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\CheckPropertyDefault.cs"
+				codeline="104"
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-disclosedToAll']"
+				itempath=".//input[@id='node-input-disclosedToAll']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.CheckboxDisclosedToAll"
+				id="63db4a35caa34e949f942d0915d6b420"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="2">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="9.21s"
+		durationms="9210"
+		type="root"
+		rid="141723dca1b2b200"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/22/2021 6:20:31 PM"
+		timestampiso="2021-08-22T11:20:31"
+		endtime="8/22/2021 6:20:41 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<errormessage>
+			Attribute 'Tabindex' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain' does not match the specified value (actual='(null)', expected='sandbox').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.451"
+			timeRelativeToTestModuleStartTime="00:03.451"
+			timeWallClock="18:20:35"
+			time="00:03.451"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewVariable
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.472"
+			timeRelativeToTestModuleStartTime="00:03.472"
+			timeWallClock="18:20:35"
+			time="00:03.472"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Tabindex='sandbox') on item 'DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId']"
+				itempath=".//select[@id='node-config-input-domainId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Recording1.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.835"
+			timeRelativeToTestModuleStartTime="00:05.835"
+			timeWallClock="18:20:37"
+			time="00:05.835"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Recordin_8d6c3edd\Recordin_8d6c3edd_910709f7_trace.jpg"
+			errthumb="images_Recordin_8d6c3edd\Recordin_8d6c3edd_910709f7_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 11840)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.118"
+			timeRelativeToTestModuleStartTime="00:09.118"
+			timeWallClock="18:20:41"
+			time="00:09.118"
+			level="Failure"
+			category="Validation"
+			errimg="images_Recordin_8d6c3edd\Recordin_8d6c3edd_129aeafc_trace.jpg"
+			errthumb="images_Recordin_8d6c3edd\Recordin_8d6c3edd_129aeafc_trace_thumb.jpg">
+			<message>
+				Attribute 'Tabindex' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain' does not match the specified value (actual='(null)', expected='sandbox').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId']"
+				itempath=".//select[@id='node-config-input-domainId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Recording1.cs"
+				codeline="96"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.123"
+			timeRelativeToTestModuleStartTime="00:09.123"
+			timeWallClock="18:20:41"
+			time="00:09.123"
+			level="Error"
+			category="Module"
+			errimg="images_Recordin_8d6c3edd\Recordin_8d6c3edd_129aeafc_trace.jpg"
+			errthumb="images_Recordin_8d6c3edd\Recordin_8d6c3edd_129aeafc_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'Tabindex' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain' does not match the specified value (actual='(null)', expected='sandbox').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at DBC3_IDE.Recording1.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Recording1.cs:line 96
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Recording1.cs"
+				codeline="96"
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId']"
+				itempath=".//select[@id='node-config-input-domainId']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

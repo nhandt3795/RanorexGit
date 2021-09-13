@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="23.16s"
+		durationms="23161"
+		type="root"
+		rid="2a2d342a426a11a"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="8/25/2021 7:08:54 PM"
+		timestampiso="2021-08-25T12:08:54"
+		endtime="8/25/2021 7:09:17 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="FillImformationDbcUser">
+		<detail>
+			FillImformationDbcUser
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.540"
+			timeRelativeToTestModuleStartTime="00:10.540"
+			timeWallClock="19:09:04"
+			time="00:10.540"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>UserName, TagValueDomain
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.559"
+			timeRelativeToTestModuleStartTime="00:10.559"
+			timeWallClock="19:09:04"
+			time="00:10.559"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute Value to '$UserName' on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-input-name']"
+				itempath=".//input[@id='node-input-name']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.UserName"
+				id="8a3b903c7c9e4da0827a7882d0906c4d"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\FillImformationDbcUser.cs"
+				codeline="108"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.089"
+			timeRelativeToTestModuleStartTime="00:18.089"
+			timeWallClock="19:09:12"
+			time="00:18.089"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 17632)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:18.827"
+			timeRelativeToTestModuleStartTime="00:18.827"
+			timeWallClock="19:09:13"
+			time="00:18.827"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\FillImformationDbcUser.cs"
+				codeline="112"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:20.837"
+			timeRelativeToTestModuleStartTime="00:20.837"
+			timeWallClock="19:09:15"
+			time="00:20.837"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute TagValue to '$TagValueDomain' on item 'DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.SelectBoxDomain'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-input-domain']"
+				itempath=".//select[@id='node-input-domain']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Nodes.Edit_DBC_USER_NODE.SelectBoxDomain"
+				id="7f51455ba19947b382858dbb9636dfff"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\FillImformationDbcUser.cs"
+				codeline="115"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:21.151"
+			timeRelativeToTestModuleStartTime="00:21.151"
+			timeWallClock="19:09:15"
+			time="00:21.151"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\FillImformationDbcUser.cs"
+				codeline="119"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

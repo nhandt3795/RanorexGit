@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="25.9s"
+		durationms="25895"
+		type="root"
+		rid="17fb40062f9d9f3"
+		totalerrorcount="0"
+		totalwarningcount="3"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="3200x1080"
+		timestamp="8/24/2021 3:38:16 PM"
+		timestampiso="2021-08-24T08:38:16"
+		endtime="8/24/2021 3:38:42 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ChooseWalletOption">
+		<detail>
+			ChooseWalletOption
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.271"
+			timeRelativeToTestModuleStartTime="00:03.271"
+			timeWallClock="15:38:19"
+			time="00:03.271"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>WalletValue
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.539"
+			timeRelativeToTestModuleStartTime="00:05.539"
+			timeWallClock="15:38:21"
+			time="00:05.539"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 4580)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.416"
+			timeRelativeToTestModuleStartTime="00:06.416"
+			timeWallClock="15:38:22"
+			time="00:06.416"
+			level="Warn"
+			category="CEF">
+			<message>
+				UI elements in your CEF AUT can’t be identified because the remote debugging port isn’t enabled in your AUT or can’t be found. Make sure you’ve enabled it and set it to 8081.<br/>Process: 'Teams' (pid 19384)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="cef-chrome-debug-protocol-NotFound"
+				showInProgressDialog="False"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Utilities.cs"
+				codeline="148"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:23.888"
+			timeRelativeToTestModuleStartTime="00:23.888"
+			timeWallClock="15:38:40"
+			time="00:23.888"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\WalletEdit\EditDbcUser\ChooseWalletOption.cs"
+				codeline="98"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

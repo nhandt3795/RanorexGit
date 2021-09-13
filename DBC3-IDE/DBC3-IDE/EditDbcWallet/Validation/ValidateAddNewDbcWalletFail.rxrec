@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="1c81e272-3aac-430e-b440-31a22c9a9bbb"
+mode="Global">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="ValidateAddNewDbcWalletFail"
+	namespace="DBC3_IDE.DBC3_IDE.EditDbcWallet.Validation">
+	</codegen>
+	<variables>
+	</variables>
+	<recorditems>
+		<validationitem
+		action="Exists"
+		enabled="True"
+		optional="False"
+		searchpropertyid="7012e39b-fe09-4ec1-ac6b-f30f9e7dfe4d">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+			<info
+			id="53e3305f-e6d1-418a-825c-0bc77b5e7032"
+			sourcename="RepositoryEditor">
+				<path>
+					/dom[@domain='localhost:1880']//li[@innertext='Add new dbc-wallet config node']
+				</path>
+				<robustPath>
+				</robustPath>
+			</info>
+			<matchname>
+				(Choose)
+			</matchname>
+			<matchvalue>
+				yourValue
+			</matchvalue>
+		</validationitem>
+		<explicitdelayitem
+		duration="2000ms"
+		enabled="True"
+		optional="False">
+			<comment>
+			</comment>
+			<bindings>
+			</bindings>
+		</explicitdelayitem>
+	</recorditems>
+	<repository
+	id="945daf6a-f1a8-41f5-a978-e39f84366797"
+	name="DBC3_IDERepository"
+	relativepath="..\..\..\DBC3_IDERepository.rxrep">
+		<codegen
+		classname="DBC3_IDERepository"
+		namespace="DBC3_IDE">
+		</codegen>
+		<rootfolder
+		id="fb62b673-52da-4865-a253-e2a4eb8014f7"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		ValidateAddNewDbcWalletFail.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>

@@ -1,0 +1,32 @@
+[
+  {
+    "Enabled": "True",
+    "TestSuite": "DBC3_IDE_Login",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "DBC3_IDE_DomainCode",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "DBC3_IDE_WalletEdit",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "DBC3_IDE_UserEdit",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "DBC3_IDE_SignEdit",
+    "RunConfig": "TestRun"
+  },
+  {
+    "Enabled": "True",
+    "TestSuite": "DBC3_IDE_GroupEdit",
+    "RunConfig": "TestRun"
+  }
+]

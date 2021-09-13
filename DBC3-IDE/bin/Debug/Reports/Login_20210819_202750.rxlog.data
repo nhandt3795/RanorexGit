@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="8.05s"
+		durationms="8046"
+		type="root"
+		rid="d590398a4d05e52"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/19/2021 8:28:12 PM"
+		timestampiso="2021-08-19T13:28:12"
+		endtime="8/19/2021 8:28:20 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Login">
+		<detail>
+			Login
+		</detail>
+		<errormessage>
+			Object reference not set to an instance of an object.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.249"
+			timeRelativeToTestModuleStartTime="00:03.249"
+			timeWallClock="20:28:15"
+			time="00:03.249"
+			level="Warn"
+			category="Data"
+			errimg="images_Login_20_3920211d\Login_20_3920211d_ef74c469_trace.jpg"
+			errthumb="images_Login_20_3920211d\Login_20_3920211d_ef74c469_trace_thumb.jpg">
+			<message>
+				The following module variables are not bound to a data column:<br/>Path, Password
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.118"
+			timeRelativeToTestModuleStartTime="00:05.118"
+			timeWallClock="20:28:17"
+			time="00:05.118"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Login_20_3920211d\Login_20_3920211d_ab5b7182_trace.jpg"
+			errthumb="images_Login_20_3920211d\Login_20_3920211d_ab5b7182_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 4332)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:07.947"
+			timeRelativeToTestModuleStartTime="00:07.947"
+			timeWallClock="20:28:20"
+			time="00:07.947"
+			level="Error"
+			category="Module"
+			errimg="images_Login_20_3920211d\Login_20_3920211d_8fec08de_trace.jpg"
+			errthumb="images_Login_20_3920211d\Login_20_3920211d_8fec08de_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				stacktrace="   at MyTest1.Utils.logoutAndLogin(RepoItemInfo logout, RepoItemInfo buttonOK, RepoItemInfo walletFile, Int32 duration) in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Utilities.cs:line 76
+   at DBC3_IDE.DNCWAREBlockChain3.Login.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DNCWAREBlockChain3\Login.cs:line 108
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Utilities.cs"
+				codeline="76"
+				loglvl="Error">
+			</metainfo>
+		</item>
+	</activity>
+</report>

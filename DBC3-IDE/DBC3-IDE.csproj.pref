@@ -1,0 +1,30 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="DBC3_IDE_GroupEdit.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="DBC3_IDERepository.rxrep" />
+    <Element value="DBC3_IDE_GroupEdit.rxtst" />
+    <Element value="DBC3-IDE\SignEdit\FillSignEdit.rxrec" />
+    <Element value="DBC3_IDE_SignEdit.rxtst" />
+    <Element value="DBC3-IDE\SignEdit\Click\ClickBtnDone.rxrec" />
+    <Element value="DBC3-IDE\SignEdit\Click\ClickVisibleDomain.rxrec" />
+    <Element value="DBC3-IDE\SignEdit\Click\ClickCheckboxContentType.rxrec" />
+    <Element value="DBC3_IDE_UserEdit.rxtst" />
+  </Array>
+  <Properties name="projectSavedData">
+    <Properties name="customTool">
+      <fileNames value="" />
+      <runOnBuild value="False" />
+    </Properties>
+    <Array name="recentusercodeselections">
+      <Element value="MyTest1.Utils.nameToID(RepoItemInfo name, String domain)" />
+      <Element value="MyTest1.Utils.logoutAndLogin(RepoItemInfo logout, RepoItemInfo buttonOK, RepoItemInfo walletFile, Int32 duration)" />
+      <Element value="MyTest1.Utils.logoutAndClickLogin(RepoItemInfo iconUser, RepoItemInfo itemLogin, RepoItemInfo itemLogout, Int32 duration)" />
+      <Element value="MyTest1.Utils.chooseUser(RepoItemInfo domain, String domainName, String user)" />
+      <Element value="MyTest1.Utils.chooseDomain(RepoItemInfo domain, String domainName)" />
+      <Element value="MyTest1.Utils.selectOptionFromDropdown(RepoItemInfo selectTag, String value)" />
+    </Array>
+  </Properties>
+</Properties>

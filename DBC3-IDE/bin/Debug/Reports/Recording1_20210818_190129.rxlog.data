@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="5.55s"
+		durationms="5547"
+		type="root"
+		rid="9adafbbf8eec126"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/18/2021 7:01:32 PM"
+		timestampiso="2021-08-18T12:01:32"
+		endtime="8/18/2021 7:01:37 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="Recording1">
+		<detail>
+			Recording1
+		</detail>
+		<errormessage>
+			Object reference not set to an instance of an object.
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.189"
+			timeRelativeToTestModuleStartTime="00:03.189"
+			timeWallClock="19:01:35"
+			time="00:03.189"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>Data
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.205"
+			timeRelativeToTestModuleStartTime="00:03.205"
+			timeWallClock="19:01:35"
+			time="00:03.205"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (InnerText='(null)') on item 'DBC3_IDE_DOMAIN.AceContent'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@class='ace_line']"
+				itempath=".//div[@class='ace_line']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.AceContent"
+				id="670fe996d08947c584372fff5ecbb064"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.192"
+			timeRelativeToTestModuleStartTime="00:05.192"
+			timeWallClock="19:01:37"
+			time="00:05.192"
+			level="Warn"
+			category="WinForms"
+			errimg="images_Recordin_52e69939\Recordin_52e69939_afe8dee4_trace.jpg"
+			errthumb="images_Recordin_52e69939\Recordin_52e69939_afe8dee4_trace_thumb.jpg">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 13824)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.468"
+			timeRelativeToTestModuleStartTime="00:05.468"
+			timeWallClock="19:01:37"
+			time="00:05.468"
+			level="Failure"
+			category="Validation"
+			errimg="images_Recordin_52e69939\Recordin_52e69939_23f9d823_trace.jpg"
+			errthumb="images_Recordin_52e69939\Recordin_52e69939_23f9d823_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@class='ace_line']"
+				itempath=".//div[@class='ace_line']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.AceContent"
+				id="670fe996d08947c584372fff5ecbb064"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="96"
+				loglvl="Failure"
+				itemindex="0">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.471"
+			timeRelativeToTestModuleStartTime="00:05.471"
+			timeWallClock="19:01:37"
+			time="00:05.471"
+			level="Error"
+			category="Module"
+			errimg="images_Recordin_52e69939\Recordin_52e69939_23f9d823_trace.jpg"
+			errthumb="images_Recordin_52e69939\Recordin_52e69939_23f9d823_trace_thumb.jpg">
+			<message>
+				Object reference not set to an instance of an object.
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.&lt;>c.&lt;AttributeEqualInternal>b__31_0(Object v, Object p)&#13;&#10;   at Ranorex.Validate.AttributeCompareImpl(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.&lt;>c__DisplayClass40_0.&lt;Execute>g__attCompare|0()&#13;&#10;   at Ranorex.Core.Testing.Services.NoMaintenanceModeService.HandleValidateAttribute[T](Func`1 action, IAttributeValidation attributeValidation)&#13;&#10;   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)&#13;&#10;   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)&#13;&#10;   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)&#13;&#10;   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)&#13;&#10;   at DBC3_IDE.DBC3_IDE.DomainCode.Recording1.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs:line 96&#13;&#10;   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\Recording1.cs"
+				codeline="96"
+				loglvl="Error"
+				itemindex="0">
+			</metainfo>
+		</item>
+	</activity>
+</report>

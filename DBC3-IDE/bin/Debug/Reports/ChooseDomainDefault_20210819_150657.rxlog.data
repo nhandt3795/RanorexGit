@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="11.86s"
+		durationms="11858"
+		type="root"
+		rid="60094cf19c781f6"
+		totalerrorcount="0"
+		totalwarningcount="1"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/19/2021 3:07:19 PM"
+		timestampiso="2021-08-19T08:07:19"
+		endtime="8/19/2021 3:07:31 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ChooseDomainDefault">
+		<detail>
+			ChooseDomainDefault
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:04.837"
+			timeRelativeToTestModuleStartTime="00:04.837"
+			timeWallClock="15:07:24"
+			time="00:04.837"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DBC3_IDE_DOMAIN.Info.Global_Configuration_Nodes' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@innertext='Global Configuration Nodes']"
+				itempath=".//span[@innertext='Global Configuration Nodes']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.Global_Configuration_Nodes"
+				id="3fbb3c2d2f9c40d083a57e84e75fe9f8"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ChooseDomainDefault.cs"
+				codeline="82"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.966"
+			timeRelativeToTestModuleStartTime="00:08.966"
+			timeWallClock="15:07:28"
+			time="00:08.966"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 8476)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.104"
+			timeRelativeToTestModuleStartTime="00:10.104"
+			timeWallClock="15:07:29"
+			time="00:10.104"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DBC3_IDE_DOMAIN.Info.dbc_domain' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@innertext='dbc-domain']"
+				itempath=".//span[@innertext='dbc-domain']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.dbc_domain"
+				id="904a9a579d0342c1985f793752203eff"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ChooseDomainDefault.cs"
+				codeline="86"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:10.870"
+			timeRelativeToTestModuleStartTime="00:10.870"
+			timeWallClock="15:07:30"
+			time="00:10.870"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'DBC3_IDE_DOMAIN.Info.Domain_Sandbox_Default' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@class='red-ui-search-result-node-label red-ui-info-outline-item-label' and @innertext='sandbox']"
+				itempath=".//div[@class='red-ui-search-result-node-label red-ui-info-outline-item-label' and @innertext='sandbox']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.Domain_Sandbox_Default"
+				id="3c525bd6217b49b6a667ac5600960b66"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ChooseDomainDefault.cs"
+				codeline="90"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="7.25s"
+		durationms="7248"
+		type="root"
+		rid="24fd2d98065f1c30"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/16/2021 11:59:28 AM"
+		timestampiso="2021-08-16T04:59:28"
+		endtime="8/16/2021 11:59:35 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ImportWallet">
+		<detail>
+			ImportWallet
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.324"
+			timeRelativeToTestModuleStartTime="00:03.324"
+			timeWallClock="11:59:31"
+			time="00:03.324"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>NewVariable
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.340"
+			timeRelativeToTestModuleStartTime="00:03.340"
+			timeWallClock="11:59:31"
+			time="00:03.340"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DBC3_IDE_DOMAIN.Login.ButtonWallet' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-dialog-login-wallet']"
+				itempath=".//input[@id='node-dialog-login-wallet']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Login.ButtonWallet"
+				id="e3ba113ddb8149e4a16f691321cf7ac4"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Login\ImportWallet.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.432"
+			timeRelativeToTestModuleStartTime="00:05.432"
+			timeWallClock="11:59:33"
+			time="00:05.432"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 11056)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.391"
+			timeRelativeToTestModuleStartTime="00:06.391"
+			timeWallClock="11:59:34"
+			time="00:06.391"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute AccessibleValue to '$NewVariable' on item 'DialogWindow.ToolBar'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/form[@title='Open']/element[@class='WorkerW']/?/?/element[@controlid='41477']//toolbar[@controlid='1001']"
+				itempath="element[@class='WorkerW']/?/?/element[@controlid='41477']//toolbar[@controlid='1001']"
+				fullname="DBC3_IDERepository.DialogWindow.ToolBar"
+				id="15ea0b568e8a4e36ae7772602b2c569d"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Login\ImportWallet.cs"
+				codeline="99"
+				itemindex="1"
+				loglvl="Info">
+			</metainfo>
+		</item>
+	</activity>
+</report>

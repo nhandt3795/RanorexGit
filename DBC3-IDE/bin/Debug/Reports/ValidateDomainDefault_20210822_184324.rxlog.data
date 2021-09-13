@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Failed"
+		duration="19.53s"
+		durationms="19525"
+		type="root"
+		rid="ccb13a5ba80261d"
+		totalerrorcount="1"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="10.1.0.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/22/2021 6:43:26 PM"
+		timestampiso="2021-08-22T11:43:26"
+		endtime="8/22/2021 6:43:46 PM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="ValidateDomainDefault">
+		<detail>
+			ValidateDomainDefault
+		</detail>
+		<errormessage>
+			Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain' does not match the specified value (actual='d21024301', expected='').
+		</errormessage>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.276"
+			timeRelativeToTestModuleStartTime="00:03.276"
+			timeWallClock="18:43:29"
+			time="00:03.276"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>TagValueDefault, Checked
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.293"
+			timeRelativeToTestModuleStartTime="00:03.293"
+			timeWallClock="18:43:29"
+			time="00:03.293"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DBC3_IDE_DOMAIN.Info.Global_Configuration_Nodes' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@innertext='Global Configuration Nodes']"
+				itempath=".//span[@innertext='Global Configuration Nodes']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.Global_Configuration_Nodes"
+				id="3fbb3c2d2f9c40d083a57e84e75fe9f8"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="108"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.408"
+			timeRelativeToTestModuleStartTime="00:05.408"
+			timeWallClock="18:43:32"
+			time="00:05.408"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 11840)<br/>https://www.ranorex.com/help/v10.1/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:06.236"
+			timeRelativeToTestModuleStartTime="00:06.236"
+			timeWallClock="18:43:32"
+			time="00:06.236"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="1"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="112"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:08.241"
+			timeRelativeToTestModuleStartTime="00:08.241"
+			timeWallClock="18:43:34"
+			time="00:08.241"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left Click item 'DBC3_IDE_DOMAIN.Info.dbc_domain' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//span[@innertext='dbc-domain']"
+				itempath=".//span[@innertext='dbc-domain']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.dbc_domain"
+				id="904a9a579d0342c1985f793752203eff"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="115"
+				itemindex="2"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:09.019"
+			timeRelativeToTestModuleStartTime="00:09.019"
+			timeWallClock="18:43:35"
+			time="00:09.019"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="3"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="119"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:11.021"
+			timeRelativeToTestModuleStartTime="00:11.021"
+			timeWallClock="18:43:37"
+			time="00:11.021"
+			level="Info"
+			category="Mouse">
+			<message>
+				Mouse Left DoubleClick item 'DBC3_IDE_DOMAIN.Info.Domain_Sandbox_Default' at Center.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//div[@class='red-ui-search-result-node-label red-ui-info-outline-item-label' and @innertext='sandbox']"
+				itempath=".//div[@class='red-ui-search-result-node-label red-ui-info-outline-item-label' and @innertext='sandbox']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Info.Domain_Sandbox_Default"
+				id="3c525bd6217b49b6a667ac5600960b66"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="122"
+				itemindex="4"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:12.001"
+			timeRelativeToTestModuleStartTime="00:12.001"
+			timeWallClock="18:43:38"
+			time="00:12.001"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="5"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="126"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.012"
+			timeRelativeToTestModuleStartTime="00:14.012"
+			timeWallClock="18:43:40"
+			time="00:14.012"
+			level="Info"
+			category="Validation">
+			<message>
+				Validating AttributeEqual (Value='(null)') on item 'DBC3_IDE_DOMAIN.EditDbcDomain.Name'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-config-input-name']"
+				itempath=".//input[@id='node-config-input-name']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.Name"
+				id="7fc80eed7d8a431bae4709f5df6ccaa9"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="129"
+				itemindex="6"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.221"
+			timeRelativeToTestModuleStartTime="00:14.221"
+			timeWallClock="18:43:40"
+			time="00:14.221"
+			level="Success"
+			category="Validation">
+			<message>
+				Attribute 'Value' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.Name' does match the specified value.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-config-input-name']"
+				itempath=".//input[@id='node-config-input-name']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.Name"
+				id="7fc80eed7d8a431bae4709f5df6ccaa9"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="130"
+				loglvl="Success"
+				itemindex="6">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:14.221"
+			timeRelativeToTestModuleStartTime="00:14.221"
+			timeWallClock="18:43:40"
+			time="00:14.221"
+			level="Info"
+			category="Delay">
+			<message>
+				Waiting for 2s.
+			</message>
+			<metainfo
+				itemindex="7"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="133"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:16.225"
+			timeRelativeToTestModuleStartTime="00:16.225"
+			timeWallClock="18:43:42"
+			time="00:16.225"
+			level="Info"
+			category="Validation"
+			errimg="images_Validate_f815a3ef\Validate_f815a3ef_06ef9c5b_trace.jpg"
+			errthumb="images_Validate_f815a3ef\Validate_f815a3ef_06ef9c5b_trace_thumb.jpg">
+			<message>
+				Validating AttributeEqual (TagValue=$TagValueDefault) on item 'DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				itempath=".//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="136"
+				itemindex="8"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.459"
+			timeRelativeToTestModuleStartTime="00:19.459"
+			timeWallClock="18:43:46"
+			time="00:19.459"
+			level="Failure"
+			category="Validation"
+			errimg="images_Validate_f815a3ef\Validate_f815a3ef_487999a3_trace.jpg"
+			errthumb="images_Validate_f815a3ef\Validate_f815a3ef_487999a3_trace_thumb.jpg">
+			<message>
+				Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain' does not match the specified value (actual='d21024301', expected='').
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				itempath=".//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="137"
+				loglvl="Failure"
+				itemindex="8">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:19.463"
+			timeRelativeToTestModuleStartTime="00:19.463"
+			timeWallClock="18:43:46"
+			time="00:19.463"
+			level="Error"
+			category="Module"
+			errimg="images_Validate_f815a3ef\Validate_f815a3ef_487999a3_trace.jpg"
+			errthumb="images_Validate_f815a3ef\Validate_f815a3ef_487999a3_trace_thumb.jpg">
+			<message>
+				Module execution was aborted because a validation step has failed. Attribute 'TagValue' of element for item 'DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain' does not match the specified value (actual='d21024301', expected='').
+			</message>
+			<metainfo
+				stacktrace="   at Ranorex.Validate.Execute(AttributeValidation attributeValidation, Func`1 action, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.Execute(IElement element, IMatch match, String message, Options options, RepoItemInfo itemInfo, Func`3 comparisonFunc, String reasonPattern)
+   at Ranorex.Validate.AttributeEqualInternal(IElement element, String name, Object value, String message, Options options, RepoItemInfo itemInfo)
+   at Ranorex.Validate.AttributeEqualInternal(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value, String message, Options options)
+   at Ranorex.Validate.AttributeEqual(RepoItemInfo itemInfo, String name, Object value)
+   at DBC3_IDE.DBC3_IDE.DomainCode.ValidateDomainDefault.Ranorex.Core.Testing.ITestModule.Run() in d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs:line 137
+   at Ranorex.Core.Testing.TestModuleLeaf.RunInternal(DataContext parentDataContext, Int32 iteration, Int32 iterationCount, Boolean skipIteration)"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\DBC3-IDE\DomainCode\ValidateDomainDefault.cs"
+				codeline="137"
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				itempath=".//select[@id='node-config-input-domainId' and @tagvalue='d21024301']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.EditDbcDomain.SelectboxDomain"
+				id="867d7c32261b43a09c0f218abb9a65cb"
+				timeout="60000"
+				loglvl="Error"
+				itemindex="8">
+			</metainfo>
+		</item>
+	</activity>
+</report>

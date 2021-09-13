@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<report
+	progress="">
+	<activity
+		result="Success"
+		duration="5.7s"
+		durationms="5702"
+		type="root"
+		rid="1f899884069c538"
+		totalerrorcount="0"
+		totalwarningcount="2"
+		totalsuccesstestcasecount="0"
+		totalfailedtestcasecount="0"
+		totalblockedtestcasecount="0"
+		childsuccesscount="0"
+		childfailedcount="0"
+		childblockedcount="0"
+		totalsuccesscount="0"
+		totalfailedcount="0"
+		totalblockedcount="0"
+		totalmaintenancemodecount="0"
+		user="haopa.lqa"
+		rxversion="9.5.3.0"
+		host="D1423"
+		osversion="Windows 10 64bit"
+		runtimeversion="4.0.30319.42000"
+		procarch="32bit"
+		oslanguage="en-US"
+		dtnlanguage="en-US"
+		screenresolution="1280x1024"
+		timestamp="8/16/2021 11:44:16 AM"
+		timestampiso="2021-08-16T04:44:16"
+		endtime="8/16/2021 11:44:21 AM"
+		timeoutfactor="1"
+		runid=""
+		sutversion=""
+		module="SetValueURL">
+		<detail>
+			SetValueURL
+		</detail>
+		<varbindings>
+		</varbindings>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.291"
+			timeRelativeToTestModuleStartTime="00:03.291"
+			timeWallClock="11:44:19"
+			time="00:03.291"
+			level="Warn"
+			category="Data">
+			<message>
+				The following module variables are not bound to a data column:<br/>URL
+			</message>
+			<metainfo
+				loglvl="Warn">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:03.306"
+			timeRelativeToTestModuleStartTime="00:03.306"
+			timeWallClock="11:44:19"
+			time="00:03.306"
+			level="Info"
+			category="Set value">
+			<message>
+				Setting attribute InnerText to '$URL' on item 'DBC3_IDE_DOMAIN.Login.TextboxURL'.
+			</message>
+			<metainfo
+				type="repoitem"
+				path="/dom[@domain='localhost:1880']//input[@id='node-dialog-login-url']"
+				itempath=".//input[@id='node-dialog-login-url']"
+				fullname="DBC3_IDERepository.DBC3_IDE_DOMAIN.Login.TextboxURL"
+				id="70e7c0a947214b488d9878346254d11e"
+				timeout="60000"
+				codefile="d:\ScriptAutomation\DBC3-IDE\DBC3-IDE\Login\SetValueURL.cs"
+				codeline="95"
+				itemindex="0"
+				loglvl="Info">
+			</metainfo>
+		</item>
+		<item
+			timeRelativeToTestSuiteStartTime="00:05.399"
+			timeRelativeToTestModuleStartTime="00:05.399"
+			timeWallClock="11:44:21"
+			time="00:05.399"
+			level="Warn"
+			category="WinForms">
+			<message>
+				Something is limiting object recognition for WinForms. This is caused by one of the following:<br/>- Your AUT uses obfuscated controls or is a mixed-mode executable.<br/>- Your AUT and the test executable target different platforms/processors. This causes issues on 64-bit OS.<br/>Process: 'Docker Desktop' (pid 11056)<br/>https://www.ranorex.com/help/v9.5/interfaces-connectivity/technology-instrumentation/general-troubleshooting/<br/>(This message is only shown once per report.)
+			</message>
+			<metainfo
+				limitationName="WinFormsResolving"
+				showInProgressDialog="False"
+				loglvl="Warn">
+			</metainfo>
+		</item>
+	</activity>
+</report>
